@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+.UserNewCars div {
+  border-radius: 5px;
+}
+.priceRange div {
+  border-radius: 15px;
+}
+.vehicleType div {
+  border-radius: 15px;
+}
+.featuredvehicles {
+  cursor: pointer;
+}
