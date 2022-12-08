@@ -7,6 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { pink } from "@mui/material/colors";
 import React from "react";
 
 function VehicleType({ vehicleType, setVehicleType }) {
@@ -66,7 +67,14 @@ function VehicleType({ vehicleType, setVehicleType }) {
                     spacing="8px"
                     sx={{ alignItems: "center" }}
                   >
-                    <Checkbox sx={{ padding: "0" }} />
+                    <Checkbox
+                      sx={{
+                        padding: "0",
+                        "&.Mui-checked": {
+                          color: pink[600],
+                        },
+                      }}
+                    />
                     <Typography
                       sx={{
                         fontSize: "14px",

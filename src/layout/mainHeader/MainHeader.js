@@ -11,10 +11,10 @@ import {
 import { Box } from "@mui/system";
 import { Link as routerLink } from "react-router-dom";
 import React from "react";
+import PinDropIcon from "@mui/icons-material/PinDrop";
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
 
-import locationIcon from "./imageHeader/Location-icon.png";
-import maillIcon from "./imageHeader/Maill-icon.png";
-import phoneIcon from "./imageHeader/Phone-icon.png";
 import ucarsGround from "./imageHeader/UcarsGroup.png";
 import carsBackgroud from "./imageHeader/cars-backgroud-1.png";
 import divider from "./imageHeader/Divider.png";
@@ -42,8 +42,12 @@ function MainHeader() {
   };
 
   return (
-    <Box sx={{ position: "relative" }}>
-      <Box sx={{ padding: "11px 60px", width: "1366px" }}>
+    <Box component="div">
+      <Box
+        sx={{
+          padding: { xs: "7px 10px", lg: "11px 60px" },
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -58,12 +62,17 @@ function MainHeader() {
               alignItems: "center",
             }}
           >
-            <Stack direction="row" spacing="12px">
-              <img src={locationIcon} alt="" height="16.67px" width="11.67px" />
+            <Stack direction="row" spacing={{ xs: "8px", lg: "12px" }}>
+              <PinDropIcon
+                sx={{
+                  height: { xs: "10px", lg: "20px" },
+                  width: { xs: "10px", lg: "20px" },
+                }}
+              />
               <Typography
                 sx={{
-                  fontSize: "12px",
-                  lineHeight: "20px",
+                  fontSize: { xs: "8px", lg: "12px" },
+                  lineHeight: { xs: "10px", lg: "20px" },
                   fontFamily: "Poppins",
                 }}
               >
@@ -75,17 +84,22 @@ function MainHeader() {
               sx={{
                 backgroundColor: "#E3E3E3",
                 width: "1px",
-                height: "50px",
-                margin: "0 23px",
+                height: { xs: "30px", lg: "50px" },
+                margin: { xs: "0 10px", lg: "0 23px" },
               }}
             ></Box>
 
             <Stack direction="row" spacing="12px">
-              <img src={maillIcon} alt="" height="13.75px" width="17.5px" />
+              <EmailIcon
+                sx={{
+                  height: { xs: "10px", lg: "20px" },
+                  width: { xs: "10px", lg: "20px" },
+                }}
+              />
               <Typography
                 sx={{
-                  fontSize: "12px",
-                  lineHeight: "20px",
+                  fontSize: { xs: "8px", lg: "12px" },
+                  lineHeight: { xs: "10px", lg: "20px" },
                   fontFamily: "Poppins",
                 }}
               >
@@ -95,11 +109,16 @@ function MainHeader() {
           </Box>
 
           <Stack direction="row" spacing="12px">
-            <img src={phoneIcon} alt="" height="13.75px" width="17.5px" />
+            <CallIcon
+              sx={{
+                height: { xs: "10px", lg: "20px" },
+                width: { xs: "10px", lg: "20px" },
+              }}
+            />
             <Typography
               sx={{
-                fontSize: "12px",
-                lineHeight: "20px",
+                fontSize: { xs: "8px", lg: "12px" },
+                lineHeight: { xs: "10px", lg: "20px" },
                 fontFamily: "Inter",
               }}
             >
@@ -113,26 +132,31 @@ function MainHeader() {
         component="div"
         sx={{
           backgroundColor: "#232323",
-          width: "1366px",
         }}
       >
         <Box
           sx={{
-            padding: "18px 60px",
+            padding: { xs: "8px 10px", lg: "18px 60px" },
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
           }}
         >
           <Box>
-            <img src={ucarsGround} alt="" height="40px" width="147.06px" />
+            <img
+              className="ucarsGround"
+              src={ucarsGround}
+              alt=""
+              height="40px"
+              width="147.06px"
+            />
           </Box>
           <Stack direction="row" spacing="46px">
             <Link
               to=""
               component={routerLink}
               sx={{
-                fontSize: "16px",
+                fontSize: { xs: "10px", lg: "16px" },
                 lineHeight: "19.36px",
                 fontWeight: 500,
                 color: "white",
