@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";

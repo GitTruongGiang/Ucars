@@ -4,7 +4,13 @@ import carsBackgroud from "./imageHeader/cars-backgroud-1.png";
 
 function Header3() {
   return (
-    <Box sx={{ position: "relative", margin: { xs: "0 15px", lg: "0 auto" } }}>
+    <Box
+      sx={{
+        position: "relative",
+        display: { xs: "flex", lg: "block" },
+        justifyContent: { xs: "center", lg: "flex-start" },
+      }}
+    >
       <Box
         component="img"
         src={carsBackgroud}
