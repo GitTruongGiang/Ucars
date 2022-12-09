@@ -50,6 +50,7 @@ function Header4() {
         <Box
           component="div"
           sx={{
+            position: "relative",
             padding: { xs: "10px 20px", lg: "10px 0" },
             width: { xs: "100%" },
           }}

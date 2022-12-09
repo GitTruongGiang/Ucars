@@ -19,7 +19,8 @@ function HomePage1() {
   return (
     <Box
       sx={{
-        padding: { xs: "50px 0px 50px 20px", lg: "160px 61px 80px 64px" },
+        padding: { xs: "50px 0px 50px 20px", lg: "160px 36px 80px 64px" },
+        width: { xs: "375px", lg: "100%" },
       }}
     >
       <Box>

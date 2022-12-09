@@ -8,7 +8,7 @@ import HomePage5 from "./HomePage5";
 
 function HomePage() {
   return (
-    <Box>
+    <>
       <HomePage1 />
 
       <HomePage2 />
@@ -18,7 +18,7 @@ function HomePage() {
       <HomePage4 />
 
       <HomePage5 />
-    </Box>
+    </>
   );
 }
 
