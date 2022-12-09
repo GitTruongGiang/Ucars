@@ -17,17 +17,6 @@ function Header3() {
         margin: "0 auto",
       }}
     >
-      {/* <Box
-        component="img"
-        src={carsBackgroud}
-        sx={{
-          width: {
-            xs: "343px",
-            lg: "100%",
-          },
-          borderRadius: { xs: "5px", lg: "0" },
-        }}
-      /> */}
       <Box
         sx={{
           position: "absolute",
