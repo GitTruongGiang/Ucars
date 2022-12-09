@@ -5,23 +5,17 @@ import carsBackgroud from "./imageHeader/cars-backgroud-1.png";
 function Header3() {
   return (
     <Box
+      className="carsBackgroud"
       sx={{
         position: "relative",
         display: { xs: "flex", lg: "block" },
         justifyContent: { xs: "center", lg: "flex-start" },
+        backgroundSize: "cover",
+        width: { xs: "343px", lg: "100%" },
+        height: { xs: "142px", lg: "529px" },
+        margin: "0 auto",
       }}
     >
-      <Box
-        component="img"
-        src={carsBackgroud}
-        sx={{
-          width: {
-            xs: "343px",
-            lg: "100%",
-          },
-          borderRadius: { xs: "5px", lg: "0" },
-        }}
-      />
       <Box
         sx={{
           position: "absolute",

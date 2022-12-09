@@ -4,6 +4,9 @@
 body {
   margin: 0 auto;
 }
+.carsBackgroud {
+  background-image: url("./layout/mainHeader/imageHeader/cars-backgroud-1.png");
+}
 #UserNewCars div {
   border-radius: 5px;
 }
@@ -45,6 +48,9 @@ body {
     height: 694px;
     width: 100%;
     background-repeat: no-repeat;
+  }
+  .carsBackgroud {
+    background-image: url("./layout/mainHeader/imageHeader/cars-backgroud-1.png");
   }
   .CarbuyerLogo {
     width: 158px;
