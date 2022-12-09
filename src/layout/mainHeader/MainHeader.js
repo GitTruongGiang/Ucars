@@ -14,6 +14,7 @@ import React from "react";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import ucarsGround from "./imageHeader/UcarsGroup.png";
 import carsBackgroud from "./imageHeader/cars-backgroud-1.png";
@@ -46,6 +47,7 @@ function MainHeader() {
       <Box
         sx={{
           padding: { xs: "7px 10px", lg: "11px 60px" },
+          width: { xs: "375px", lg: "1366px" },
         }}
       >
         <Box
@@ -72,7 +74,6 @@ function MainHeader() {
               <Typography
                 sx={{
                   fontSize: { xs: "8px", lg: "12px" },
-                  lineHeight: { xs: "10px", lg: "20px" },
                   fontFamily: "Poppins",
                 }}
               >
@@ -99,7 +100,6 @@ function MainHeader() {
               <Typography
                 sx={{
                   fontSize: { xs: "8px", lg: "12px" },
-                  lineHeight: { xs: "10px", lg: "20px" },
                   fontFamily: "Poppins",
                 }}
               >
@@ -132,6 +132,7 @@ function MainHeader() {
         component="div"
         sx={{
           backgroundColor: "#232323",
+          width: { xs: "375px", lg: "1366px" },
         }}
       >
         <Box
@@ -151,13 +152,14 @@ function MainHeader() {
               width="147.06px"
             />
           </Box>
-          <Stack direction="row" spacing="46px">
+
+          <Stack direction="row" spacing={{ xs: "10px", lg: "46px" }}>
             <Link
               to=""
               component={routerLink}
               sx={{
                 fontSize: { xs: "10px", lg: "16px" },
-                lineHeight: "19.36px",
+                lineHeight: { xs: "19.36px", lg: "19.36px" },
                 fontWeight: 500,
                 color: "white",
                 textDecoration: "none",
@@ -169,8 +171,8 @@ function MainHeader() {
               to=""
               component={routerLink}
               sx={{
-                fontSize: "16px",
-                lineHeight: "19.36px",
+                fontSize: { xs: "10px", lg: "16px" },
+                lineHeight: { xs: "19.36px", lg: "19.36px" },
                 fontWeight: 500,
                 color: "white",
                 textDecoration: "none",
@@ -182,8 +184,8 @@ function MainHeader() {
               to=""
               component={routerLink}
               sx={{
-                fontSize: "16px",
-                lineHeight: "19.36px",
+                fontSize: { xs: "10px", lg: "16px" },
+                lineHeight: { xs: "19.36px", lg: "19.36px" },
                 fontWeight: 500,
                 color: "white",
                 textDecoration: "none",
@@ -195,8 +197,8 @@ function MainHeader() {
               to=""
               component={routerLink}
               sx={{
-                fontSize: "16px",
-                lineHeight: "19.36px",
+                fontSize: { xs: "10px", lg: "16px" },
+                lineHeight: { xs: "19.36px", lg: "19.36px" },
                 fontWeight: 500,
                 color: "white",
                 textDecoration: "none",
@@ -207,13 +209,11 @@ function MainHeader() {
           </Stack>
           <Button
             sx={{
-              fontSize: "16px",
-              lineHeight: "19px",
+              fontSize: { xs: "8px", lg: "16px" },
               backgroundColor: "#EE1B24",
               borderRadius: "5px",
               color: "white",
-              width: "179px",
-              height: "40px",
+              padding: { xs: "5px 25px", lg: "11px 68px" },
               ":hover": {
                 backgroundColor: "white",
                 color: "#EE1B24",
@@ -226,13 +226,24 @@ function MainHeader() {
       </Box>
 
       <Box sx={{ position: "relative" }}>
-        <img src={carsBackgroud} alt="" width="1366px" height="100%" />
-        <Box sx={{ position: "absolute", top: "97px", left: "108px" }}>
-          <Stack spacing="16px">
+        <img
+          className="carsBackgroud"
+          src={carsBackgroud}
+          alt=""
+          width="1366px"
+          height="100%"
+        />
+        <Box
+          sx={{
+            position: "absolute",
+            top: { xs: "19.4px", lg: "97px" },
+            left: { xs: "21.6px", lg: "108px" },
+          }}
+        >
+          <Stack spacing={{ xs: "3.2px", lg: "16px" }}>
             <Typography
               sx={{
-                fontSize: "60px",
-                lineHeight: "76px",
+                fontSize: { xs: "20px", lg: "60px" },
                 fontWeight: 700,
                 color: "#FFFFFF",
                 fontFamily: "Poppins",
@@ -242,8 +253,7 @@ function MainHeader() {
             </Typography>
             <Typography
               sx={{
-                fontSize: "18px",
-                lineHeight: "21.78px",
+                fontSize: { xs: "8px", lg: "18px" },
                 fontWeight: 400,
                 color: "#FFFFFF",
                 fontFamily: "Inter",
@@ -257,10 +267,12 @@ function MainHeader() {
             sx={{
               backgroundColor: "#EE1B24",
               color: "white",
-              height: "52px",
-              width: "196px",
-              borderRadius: "8px",
-              mt: "32px",
+              padding: { xs: "4px 15px", lg: "11px 48px" },
+              borderRadius: { xs: "3px", lg: "8px" },
+              mt: { xs: "8px", lg: "32px" },
+              fontSize: { xs: "8px", lg: "18px" },
+              fontWeight: 600,
+              fontFamily: "Inter",
               ":hover": {
                 backgroundColor: "white",
                 color: "#EE1B24",
@@ -274,184 +286,170 @@ function MainHeader() {
 
       <Box
         sx={{
-          width: "1242px",
+          width: { xs: "349px", lg: "1242px" },
           backgroundColor: "#FFFFFF",
-          position: "absolute",
-          left: "62px",
-          top: "618px",
+          position: { xs: "static", lg: "absolute" },
+          left: { xs: "0", lg: "62px" },
+          top: { xs: "0", lg: "618px" },
           borderRadius: "10px",
           border: " 1px solid #E3E3E3",
           boxShadow: "20px 20px 120px 15px rgba(0, 0, 0, 0.05)",
-          display: "flex",
-          alignItems: "center",
+          margin: { xs: "0 auto", lg: "0" },
+          padding: { xs: "0", lg: "0px 40px" },
+          mt: { xs: "20px" },
         }}
       >
         <Box
-          component="div"
-          onClick={handleUserNewCars}
           sx={{
-            padding: "25px 0px 25px 40px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            backgroundColor: userNewCars !== null ? "#E3E3E3" : "",
+            flexWrap: { xs: "wrap", lg: "nowrap" },
             borderRadius: "10px 0 0 10px",
           }}
         >
-          <Stack direction="row" spacing="40px" sx={{ alignItems: "center" }}>
-            <Box sx={{ padding: "10px 0" }}>
-              <Stack spacing="30px">
+          <Box
+            component="div"
+            sx={{
+              padding: { xs: "10px 20px", lg: "10px 0" },
+              width: { xs: "100%" },
+            }}
+            onClick={handleUserNewCars}
+          >
+            <Stack spacing="30px">
+              <Typography
+                sx={{
+                  fontSize: "16px",
+                  fontWeight: 500,
+                  color: "#232323",
+                }}
+              >
+                New/ Used
+              </Typography>
+              <Stack
+                direction="row"
+                sx={{ justifyContent: { xs: "space-between" } }}
+              >
                 <Typography
                   sx={{
-                    fontSize: "16px",
-                    lineHeight: "19px",
-                    fontWeight: 500,
-                    color: "#232323",
+                    color: "#5F5F5F",
+                    fontSize: "14px",
+                    fontWeight: 400,
                   }}
                 >
-                  New/ Used
+                  New Cars
                 </Typography>
-                <Stack direction="row" spacing="123px">
-                  <Typography
-                    sx={{
-                      color: "#5F5F5F",
-                      fontSize: "14px",
-                      lineHeight: "16px",
-                      fontWeight: 400,
-                    }}
-                  >
-                    New Cars
-                  </Typography>
 
-                  <IconButton sx={{ padding: "0" }} onClick={handleUserNewCars}>
-                    <img src={keyboardArrowDown} alt="" />
-                  </IconButton>
-                </Stack>
+                <KeyboardArrowDownIcon
+                  sx={{ padding: "0" }}
+                  onClick={handleUserNewCars}
+                />
               </Stack>
-            </Box>
+            </Stack>
+          </Box>
 
-            <Box
-              sx={{
-                width: "4px",
-                height: "60px",
-                backgroundColor:
-                  userNewCars || userNewCars !== null
-                    ? "#E3E3E3"
-                    : priceRange
-                    ? "#fff"
-                    : vehicleType
-                    ? "#fff"
-                    : "#E3E3E3",
-              }}
-            />
-          </Stack>
-        </Box>
+          <Box
+            sx={{
+              width: { xs: "100%", lg: "4px" },
+              height: { xs: "1px", lg: "60px" },
+              margin: { xs: "10px 0px", lg: "40px 40px" },
+              backgroundColor: "#E3E3E3",
+            }}
+          />
 
-        <Box
-          component="div"
-          onClick={handlePriceRange}
-          sx={{
-            padding: "25px 0px 25px 40px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            backgroundColor: priceRange !== null ? "#E3E3E3" : "",
-          }}
-        >
-          <Stack direction="row" spacing="40px" sx={{ alignItems: "center" }}>
-            <Box sx={{ padding: "10px 0" }}>
-              <Stack spacing="30px">
-                <Typography
-                  sx={{
-                    fontSize: "16px",
-                    lineHeight: "19px",
-                    fontWeight: 500,
-                    color: "#232323",
-                  }}
+          <Box
+            component="div"
+            onClick={handlePriceRange}
+            sx={{
+              padding: { xs: "10px 20px", lg: "10px 0" },
+              width: { xs: "100%" },
+            }}
+          >
+            <Stack spacing="30px">
+              <Typography
+                sx={{
+                  fontSize: "16px",
+                  lineHeight: "19px",
+                  fontWeight: 500,
+                  color: "#232323",
+                }}
+              >
+                Price Range
+              </Typography>
+              <Stack
+                direction="row"
+                spacing={{ xs: "0", lg: "78.92px" }}
+                sx={{ justifyContent: { xs: "space-between" } }}
+              >
+                <Stack
+                  direction="row"
+                  spacing="18px"
+                  sx={{ alignItems: "center" }}
                 >
-                  Price Range
-                </Typography>
-                <Stack direction="row" spacing="78.92px">
-                  <Stack
-                    direction="row"
-                    spacing="18px"
-                    sx={{ alignItems: "center" }}
-                  >
-                    <Stack direction="row" spacing="8px">
-                      <img src={dolarIcon} alt="" />
-                      <Typography
-                        sx={{
-                          color: "#5F5F5F",
-                          fontSize: "14px",
-                          lineHeight: "16px",
-                          fontWeight: 400,
-                        }}
-                      >
-                        $10,0000
-                      </Typography>
-                    </Stack>
-
-                    <Box
+                  <Stack direction="row" spacing="8px">
+                    <img src={dolarIcon} alt="" />
+                    <Typography
                       sx={{
-                        backgroundColor: "#5F5F5F",
-                        width: "16px",
-                        height: "0px",
-                        border: "0.838476px solid #5F5F5F",
-                        transform: "rotate(-180deg)",
+                        color: "#5F5F5F",
+                        fontSize: "14px",
+                        lineHeight: "16px",
+                        fontWeight: 400,
                       }}
-                    />
-
-                    <Stack direction="row" spacing="8px">
-                      <img src={dolarIcon} alt="" />
-                      <Typography
-                        sx={{
-                          color: "#5F5F5F",
-                          fontSize: "14px",
-                          lineHeight: "16px",
-                          fontWeight: 400,
-                        }}
-                      >
-                        $100,0000
-                      </Typography>
-                    </Stack>
+                    >
+                      $10,0000
+                    </Typography>
                   </Stack>
 
-                  <IconButton sx={{ padding: "0" }} onClick={handlePriceRange}>
-                    <img src={keyboardArrowDown} alt="" />
-                  </IconButton>
+                  <Box
+                    sx={{
+                      backgroundColor: "#5F5F5F",
+                      width: "16px",
+                      height: "0px",
+                      border: "0.838476px solid #5F5F5F",
+                      transform: "rotate(-180deg)",
+                    }}
+                  />
+
+                  <Stack direction="row" spacing="8px">
+                    <img src={dolarIcon} alt="" />
+                    <Typography
+                      sx={{
+                        color: "#5F5F5F",
+                        fontSize: "14px",
+                        lineHeight: "16px",
+                        fontWeight: 400,
+                      }}
+                    >
+                      $100,0000
+                    </Typography>
+                  </Stack>
                 </Stack>
+
+                <KeyboardArrowDownIcon
+                  sx={{ padding: "0" }}
+                  onClick={handlePriceRange}
+                />
               </Stack>
-            </Box>
+            </Stack>
+          </Box>
 
-            <Box
-              sx={{
-                width: "4px",
-                height: "60px",
-                backgroundColor:
-                  priceRange || priceRange !== null
-                    ? "#E3E3E3"
-                    : userNewCars
-                    ? "#fff"
-                    : vehicleType
-                    ? "#fff"
-                    : "#E3E3E3",
-              }}
-            />
-          </Stack>
-        </Box>
+          <Box
+            sx={{
+              width: { xs: "100%", lg: "4px" },
+              height: { xs: "1px", lg: "60px" },
+              margin: { lg: "40px 40px" },
+              backgroundColor: "#E3E3E3",
+            }}
+          />
 
-        <Box
-          component="div"
-          onClick={handleVehicleType}
-          sx={{
-            padding: "25px 40px 25px 40px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            backgroundColor: vehicleType !== null ? "#E3E3E3" : "",
-          }}
-        >
-          <Box sx={{ padding: "10px 0" }}>
+          <Box
+            component="div"
+            onClick={handleVehicleType}
+            sx={{
+              padding: { xs: "10px 20px", lg: "10px 0" },
+              width: { xs: "100%" },
+            }}
+          >
             <Stack spacing="30px">
               <Typography
                 sx={{
@@ -463,7 +461,11 @@ function MainHeader() {
               >
                 Vehicle Type
               </Typography>
-              <Stack direction="row" spacing="123px">
+
+              <Stack
+                direction="row"
+                sx={{ justifyContent: { xs: "space-between" } }}
+              >
                 <Typography
                   sx={{
                     color: "#5F5F5F",
@@ -474,29 +476,45 @@ function MainHeader() {
                 >
                   Duplex
                 </Typography>
-
-                <IconButton sx={{ padding: "0" }} onClick={handleVehicleType}>
-                  <img src={keyboardArrowDown} alt="" />
-                </IconButton>
+                <KeyboardArrowDownIcon
+                  sx={{ padding: "0" }}
+                  onClick={handleVehicleType}
+                />
               </Stack>
             </Stack>
           </Box>
-        </Box>
 
-        <Box sx={{ padding: "25px 40px 25px 70px" }}>
-          <Button
-            variant="contained"
+          <Box
             sx={{
-              width: "140px",
-              height: "60px",
-              borderRadius: "5px",
-              backgroundColor: "#EE1B24",
-              color: "white",
-              ":hover": { backgroundColor: "white", color: "#EE1B24" },
+              width: { xs: "100%", lg: "4px" },
+              height: { xs: "1px", lg: "60px" },
+              margin: { lg: "40px 40px" },
+              backgroundColor: "#fff",
+            }}
+          />
+
+          <Box
+            sx={{
+              marginLeft: { xs: "0", lg: "34px" },
+              width: { xs: "100%" },
+              textAlign: "center",
+              padding: { xs: "10px", lg: "0" },
             }}
           >
-            Search
-          </Button>
+            <Button
+              variant="contained"
+              sx={{
+                width: { xs: "100%", lg: "140px" },
+                height: "60px",
+                borderRadius: "5px",
+                backgroundColor: "#EE1B24",
+                color: "white",
+                ":hover": { backgroundColor: "white", color: "#EE1B24" },
+              }}
+            >
+              Search
+            </Button>
+          </Box>
         </Box>
 
         <UserNewCars

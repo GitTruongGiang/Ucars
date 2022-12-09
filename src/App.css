@@ -4,22 +4,40 @@
 body {
   margin: 0 auto;
 }
-.UserNewCars div {
+#UserNewCars div {
   border-radius: 5px;
 }
-.priceRange div {
+#UserNewCars {
+  left: -40px;
+  top: 20px;
+}
+#priceRange div {
   border-radius: 15px;
 }
-.vehicleType div {
+#priceRange {
+  top: 20px;
+  left: -40px;
+}
+#vehicleType div {
   border-radius: 15px;
+}
+#vehicleType {
+  top: 20px;
+  left: -40px;
 }
 .featuredvehicles {
   cursor: pointer;
+}
+.scroll::-webkit-scrollbar {
+  width: 0;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
   .ucarsGround {
     height: 20px;
     width: 80px;
+  }
+  .carsBackgroud {
+    width: 375px;
   }
 }

@@ -34,9 +34,11 @@ function VehicleType({ vehicleType, setVehicleType }) {
   ];
 
   const open = Boolean(vehicleType);
+  const id = open ? "vehicleType" : undefined;
   return (
     <Popover
       className="vehicleType"
+      id={id}
       open={open}
       anchorEl={vehicleType}
       onClose={handleClose}

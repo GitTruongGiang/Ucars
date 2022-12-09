@@ -23,10 +23,10 @@ function UserNewCars({ userNewCars, setUserNewCars }) {
   };
 
   const open = Boolean(userNewCars);
-
+  const id = open ? "UserNewCars" : undefined;
   return (
     <Popover
-      className="UserNewCars"
+      id={id}
       open={open}
       anchorEl={userNewCars}
       onClose={handleClose}

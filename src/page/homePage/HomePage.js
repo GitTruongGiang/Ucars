@@ -59,747 +59,765 @@ function HomePage() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          initialSlide: 3,
         },
       },
     ],
   };
   return (
-    <Box sx={{ width: "1366px" }}>
-      <Box sx={{ padding: "160px 61px 80px 64px" }}>
+    <Box sx={{ width: { xs: "375px", lg: "1366px" } }}>
+      <Box
+        sx={{
+          padding: { xs: "50px 30px 80px 20px", lg: "160px 61px 80px 64px" },
+        }}
+      >
         <Box
           sx={{
-            width: "1241px",
+            width: { xs: "349px", lg: "1242px" },
           }}
         >
-          <Box>
-            <Stack direction="column" spacing="24px">
-              <Grid container spacing="39px">
-                <Grid item xs>
-                  <img src={rectangle700} alt="" height="361px" />
-                </Grid>
-
-                <Grid item xs>
-                  <Box
-                    sx={{
-                      height: "361px",
-                      width: "281px",
-                      border: "1px solid #E0E0E0",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
-                    }}
-                  >
-                    <img src={rectangle673} alt="" height="187px" />
-                    <Box sx={{ padding: "16px 0 24px 16px" }}>
-                      <Stack spacing="8px">
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: { xs: "nowrap", lg: "wrap" },
+              justifyContent: "space-between",
+            }}
+          >
+            <Stack
+              className="scroll"
+              sx={{
+                display: "flex",
+                flexWrap: { xs: "nowrap", lg: "wrap" },
+                justifyContent: "space-between",
+                overflowX: { xs: "scroll" },
+              }}
+              direction={{ xs: "row" }}
+              spacing={{ xs: "39px", lg: "0" }}
+            >
+              <Box sx={{ mb: { xs: "0", lg: "24px" } }}>
+                <img src={rectangle700} alt="" height="361px" />
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    height: "361px",
+                    width: "281px",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
+                  }}
+                >
+                  <img src={rectangle673} alt="" height="187px" />
+                  <Box sx={{ padding: "16px 0 24px 16px" }}>
+                    <Stack spacing="8px">
+                      <Typography
+                        sx={{
+                          color: "#232323",
+                          fontSize: "16px",
+                          fontWeight: 600,
+                          lineHeight: "24px",
+                        }}
+                      >
+                        BMW X3
+                      </Typography>
+                      <Stack direction="row" spacing="8px">
                         <Typography
                           sx={{
                             color: "#232323",
                             fontSize: "16px",
-                            fontWeight: 600,
+                            fontWeight: 400,
                             lineHeight: "24px",
                           }}
                         >
-                          BMW X3
+                          From{" "}
+                          <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
+                            $248,000
+                          </span>
                         </Typography>
-                        <Stack direction="row" spacing="8px">
-                          <Typography
-                            sx={{
-                              color: "#232323",
-                              fontSize: "16px",
-                              fontWeight: 400,
-                              lineHeight: "24px",
-                            }}
-                          >
-                            From{" "}
-                            <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
-                              $248,000
-                            </span>
-                          </Typography>
-                          <Box
-                            sx={{
-                              width: "72px",
-                              height: "24px",
-                              backgroundColor: "#E5EEFB",
-                              borderRadius: "2px",
-                            }}
-                          >
-                            <Box sx={{ padding: "2px 4px" }}>
-                              <Typography
-                                sx={{
-                                  color: "#0F5EDD",
-                                  fontSize: "12px",
-                                  fontWeight: 400,
-                                  lineHeight: "20px",
-                                }}
-                              >
-                                $2,302/mo
-                              </Typography>
-                            </Box>
+                        <Box
+                          sx={{
+                            width: "72px",
+                            height: "24px",
+                            backgroundColor: "#E5EEFB",
+                            borderRadius: "2px",
+                          }}
+                        >
+                          <Box sx={{ padding: "2px 4px" }}>
+                            <Typography
+                              sx={{
+                                color: "#0F5EDD",
+                                fontSize: "12px",
+                                fontWeight: 400,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              $2,302/mo
+                            </Typography>
                           </Box>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="4px"
-                          sx={{ color: "#5F5F5F" }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            4 variants
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            | with COE
-                          </Typography>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="8px"
-                          sx={{ alignItems: "center" }}
-                        >
-                          <img src={ellipse} alt="" />
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                              color: "#232323",
-                            }}
-                          >
-                            Performance Motors
-                          </Typography>
-                        </Stack>
+                        </Box>
                       </Stack>
-                    </Box>
+
+                      <Stack
+                        direction="row"
+                        spacing="4px"
+                        sx={{ color: "#5F5F5F" }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          4 variants
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          | with COE
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing="8px"
+                        sx={{ alignItems: "center" }}
+                      >
+                        <img src={ellipse} alt="" />
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                            color: "#232323",
+                          }}
+                        >
+                          Performance Motors
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Box>
-                </Grid>
-                <Grid item xs>
-                  <Box
-                    sx={{
-                      height: "361px",
-                      width: "281px",
-                      border: "1px solid #E0E0E0",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
-                    }}
-                  >
-                    <img src={rectangle6732} alt="" height="187px" />
-                    <Box sx={{ padding: "16px 0 24px 16px" }}>
-                      <Stack spacing="8px">
+                </Box>
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    height: "361px",
+                    width: "281px",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
+                  }}
+                >
+                  <img src={rectangle6732} alt="" height="187px" />
+                  <Box sx={{ padding: "16px 0 24px 16px" }}>
+                    <Stack spacing="8px">
+                      <Typography
+                        sx={{
+                          color: "#232323",
+                          fontSize: "16px",
+                          fontWeight: 600,
+                          lineHeight: "24px",
+                        }}
+                      >
+                        Alpine A110
+                      </Typography>
+                      <Stack direction="row" spacing="8px">
                         <Typography
                           sx={{
                             color: "#232323",
                             fontSize: "16px",
-                            fontWeight: 600,
+                            fontWeight: 400,
                             lineHeight: "24px",
                           }}
                         >
-                          Alpine A110
+                          From{" "}
+                          <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
+                            $248,000
+                          </span>
                         </Typography>
-                        <Stack direction="row" spacing="8px">
-                          <Typography
-                            sx={{
-                              color: "#232323",
-                              fontSize: "16px",
-                              fontWeight: 400,
-                              lineHeight: "24px",
-                            }}
-                          >
-                            From{" "}
-                            <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
-                              $248,000
-                            </span>
-                          </Typography>
-                          <Box
-                            sx={{
-                              width: "72px",
-                              height: "24px",
-                              backgroundColor: "#E5EEFB",
-                              borderRadius: "2px",
-                            }}
-                          >
-                            <Box sx={{ padding: "2px 4px" }}>
-                              <Typography
-                                sx={{
-                                  color: "#0F5EDD",
-                                  fontSize: "12px",
-                                  fontWeight: 400,
-                                  lineHeight: "20px",
-                                }}
-                              >
-                                $2,302/mo
-                              </Typography>
-                            </Box>
+                        <Box
+                          sx={{
+                            width: "72px",
+                            height: "24px",
+                            backgroundColor: "#E5EEFB",
+                            borderRadius: "2px",
+                          }}
+                        >
+                          <Box sx={{ padding: "2px 4px" }}>
+                            <Typography
+                              sx={{
+                                color: "#0F5EDD",
+                                fontSize: "12px",
+                                fontWeight: 400,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              $2,302/mo
+                            </Typography>
                           </Box>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="4px"
-                          sx={{ color: "#5F5F5F" }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            3 variants
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            | with COE
-                          </Typography>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="8px"
-                          sx={{ alignItems: "center" }}
-                        >
-                          <img src={ellipse2} alt="" />
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                              color: "#232323",
-                            }}
-                          >
-                            Wearnes Automotive
-                          </Typography>
-                        </Stack>
+                        </Box>
                       </Stack>
-                    </Box>
+
+                      <Stack
+                        direction="row"
+                        spacing="4px"
+                        sx={{ color: "#5F5F5F" }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          3 variants
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          | with COE
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing="8px"
+                        sx={{ alignItems: "center" }}
+                      >
+                        <img src={ellipse2} alt="" />
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                            color: "#232323",
+                          }}
+                        >
+                          Wearnes Automotive
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Box>
-                </Grid>
-                <Grid item xs>
-                  <Box
-                    sx={{
-                      height: "361px",
-                      width: "281px",
-                      border: "1px solid #E0E0E0",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
-                    }}
-                  >
-                    <img src={rectangle6733} alt="" height="187px" />
-                    <Box sx={{ padding: "16px 0 24px 16px" }}>
-                      <Stack spacing="8px">
+                </Box>
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    height: "361px",
+                    width: "281px",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
+                  }}
+                >
+                  <img src={rectangle6733} alt="" height="187px" />
+                  <Box sx={{ padding: "16px 0 24px 16px" }}>
+                    <Stack spacing="8px">
+                      <Typography
+                        sx={{
+                          color: "#232323",
+                          fontSize: "16px",
+                          fontWeight: 600,
+                          lineHeight: "24px",
+                        }}
+                      >
+                        Aston Martin DBS Superlegge...
+                      </Typography>
+                      <Stack direction="row" spacing="8px">
                         <Typography
                           sx={{
                             color: "#232323",
                             fontSize: "16px",
-                            fontWeight: 600,
+                            fontWeight: 400,
                             lineHeight: "24px",
                           }}
                         >
-                          Aston Martin DBS Superlegge...
+                          POA
                         </Typography>
-                        <Stack direction="row" spacing="8px">
-                          <Typography
-                            sx={{
-                              color: "#232323",
-                              fontSize: "16px",
-                              fontWeight: 400,
-                              lineHeight: "24px",
-                            }}
-                          >
-                            POA
-                          </Typography>
-                          <Box
-                            sx={{
-                              width: "72px",
-                              height: "24px",
-                              backgroundColor: "#E5EEFB",
-                              borderRadius: "2px",
-                            }}
-                          >
-                            <Box sx={{ padding: "2px 4px" }}>
-                              <Typography
-                                sx={{
-                                  color: "#0F5EDD",
-                                  fontSize: "12px",
-                                  fontWeight: 400,
-                                  lineHeight: "20px",
-                                }}
-                              >
-                                $2,302/mo
-                              </Typography>
-                            </Box>
+                        <Box
+                          sx={{
+                            width: "72px",
+                            height: "24px",
+                            backgroundColor: "#E5EEFB",
+                            borderRadius: "2px",
+                          }}
+                        >
+                          <Box sx={{ padding: "2px 4px" }}>
+                            <Typography
+                              sx={{
+                                color: "#0F5EDD",
+                                fontSize: "12px",
+                                fontWeight: 400,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              $2,302/mo
+                            </Typography>
                           </Box>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="4px"
-                          sx={{ color: "#5F5F5F" }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            1 variant
-                          </Typography>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="8px"
-                          sx={{ alignItems: "center" }}
-                        >
-                          <img src={ellipse3} alt="" />
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                              color: "#232323",
-                            }}
-                          >
-                            Wearnes Automotive
-                          </Typography>
-                        </Stack>
+                        </Box>
                       </Stack>
-                    </Box>
+
+                      <Stack
+                        direction="row"
+                        spacing="4px"
+                        sx={{ color: "#5F5F5F" }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          1 variant
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing="8px"
+                        sx={{ alignItems: "center" }}
+                      >
+                        <img src={ellipse3} alt="" />
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                            color: "#232323",
+                          }}
+                        >
+                          Wearnes Automotive
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Box>
-                </Grid>
-                <Grid item xs>
-                  <Box
-                    sx={{
-                      height: "361px",
-                      width: "281px",
-                      border: "1px solid #E0E0E0",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
-                    }}
-                  >
-                    <img src={rectangle6734} alt="" height="187px" />
-                    <Box sx={{ padding: "16px 0 24px 16px" }}>
-                      <Stack spacing="8px">
+                </Box>
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    height: "361px",
+                    width: "281px",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
+                  }}
+                >
+                  <img src={rectangle6734} alt="" height="187px" />
+                  <Box sx={{ padding: "16px 0 24px 16px" }}>
+                    <Stack spacing="8px">
+                      <Typography
+                        sx={{
+                          color: "#232323",
+                          fontSize: "16px",
+                          fontWeight: 600,
+                          lineHeight: "24px",
+                        }}
+                      >
+                        Aston Martin DBS Superlegge...
+                      </Typography>
+                      <Stack direction="row" spacing="8px">
                         <Typography
                           sx={{
                             color: "#232323",
                             fontSize: "16px",
-                            fontWeight: 600,
+                            fontWeight: 400,
                             lineHeight: "24px",
                           }}
                         >
-                          Aston Martin DBS Superlegge...
+                          From{" "}
+                          <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
+                            $278,000
+                          </span>
                         </Typography>
-                        <Stack direction="row" spacing="8px">
-                          <Typography
-                            sx={{
-                              color: "#232323",
-                              fontSize: "16px",
-                              fontWeight: 400,
-                              lineHeight: "24px",
-                            }}
-                          >
-                            From{" "}
-                            <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
-                              $278,000
-                            </span>
-                          </Typography>
-                          <Box
-                            sx={{
-                              width: "72px",
-                              height: "24px",
-                              backgroundColor: "#E5EEFB",
-                              borderRadius: "2px",
-                            }}
-                          >
-                            <Box sx={{ padding: "2px 4px" }}>
-                              <Typography
-                                sx={{
-                                  color: "#0F5EDD",
-                                  fontSize: "12px",
-                                  fontWeight: 400,
-                                  lineHeight: "20px",
-                                }}
-                              >
-                                $2,302/mo
-                              </Typography>
-                            </Box>
+                        <Box
+                          sx={{
+                            width: "72px",
+                            height: "24px",
+                            backgroundColor: "#E5EEFB",
+                            borderRadius: "2px",
+                          }}
+                        >
+                          <Box sx={{ padding: "2px 4px" }}>
+                            <Typography
+                              sx={{
+                                color: "#0F5EDD",
+                                fontSize: "12px",
+                                fontWeight: 400,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              $2,302/mo
+                            </Typography>
                           </Box>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="4px"
-                          sx={{ color: "#5F5F5F" }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            3 variants
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            | with COE
-                          </Typography>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="8px"
-                          sx={{ alignItems: "center" }}
-                        >
-                          <img src={ellipse} alt="" />
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                              color: "#232323",
-                            }}
-                          >
-                            EuroAutomobile
-                          </Typography>
-                        </Stack>
+                        </Box>
                       </Stack>
-                    </Box>
+
+                      <Stack
+                        direction="row"
+                        spacing="4px"
+                        sx={{ color: "#5F5F5F" }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          3 variants
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          | with COE
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing="8px"
+                        sx={{ alignItems: "center" }}
+                      >
+                        <img src={ellipse} alt="" />
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                            color: "#232323",
+                          }}
+                        >
+                          EuroAutomobile
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Box>
-                </Grid>
-                <Grid item xs>
-                  <Box
-                    sx={{
-                      height: "361px",
-                      width: "281px",
-                      border: "1px solid #E0E0E0",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
-                    }}
-                  >
-                    <img src={rectangle6735} alt="" height="187px" />
-                    <Box sx={{ padding: "16px 0 24px 16px" }}>
-                      <Stack spacing="8px">
+                </Box>
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    height: "361px",
+                    width: "281px",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
+                  }}
+                >
+                  <img src={rectangle6735} alt="" height="187px" />
+                  <Box sx={{ padding: "16px 0 24px 16px" }}>
+                    <Stack spacing="8px">
+                      <Typography
+                        sx={{
+                          color: "#232323",
+                          fontSize: "16px",
+                          fontWeight: 600,
+                          lineHeight: "24px",
+                        }}
+                      >
+                        Aston Martin DB11 Volante
+                      </Typography>
+                      <Stack direction="row" spacing="8px">
                         <Typography
                           sx={{
                             color: "#232323",
                             fontSize: "16px",
-                            fontWeight: 600,
+                            fontWeight: 400,
                             lineHeight: "24px",
                           }}
                         >
-                          Aston Martin DB11 Volante
+                          POA
                         </Typography>
-                        <Stack direction="row" spacing="8px">
-                          <Typography
-                            sx={{
-                              color: "#232323",
-                              fontSize: "16px",
-                              fontWeight: 400,
-                              lineHeight: "24px",
-                            }}
-                          >
-                            POA
-                          </Typography>
-                          <Box
-                            sx={{
-                              width: "72px",
-                              height: "24px",
-                              backgroundColor: "#E5EEFB",
-                              borderRadius: "2px",
-                            }}
-                          >
-                            <Box sx={{ padding: "2px 4px" }}>
-                              <Typography
-                                sx={{
-                                  color: "#0F5EDD",
-                                  fontSize: "12px",
-                                  fontWeight: 400,
-                                  lineHeight: "20px",
-                                }}
-                              >
-                                $2,302/mo
-                              </Typography>
-                            </Box>
+                        <Box
+                          sx={{
+                            width: "72px",
+                            height: "24px",
+                            backgroundColor: "#E5EEFB",
+                            borderRadius: "2px",
+                          }}
+                        >
+                          <Box sx={{ padding: "2px 4px" }}>
+                            <Typography
+                              sx={{
+                                color: "#0F5EDD",
+                                fontSize: "12px",
+                                fontWeight: 400,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              $2,302/mo
+                            </Typography>
                           </Box>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="4px"
-                          sx={{ color: "#5F5F5F" }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            1 variant
-                          </Typography>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="8px"
-                          sx={{ alignItems: "center" }}
-                        >
-                          <img src={ellipse3} alt="" />
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                              color: "#232323",
-                            }}
-                          >
-                            Wearnes Automotive
-                          </Typography>
-                        </Stack>
+                        </Box>
                       </Stack>
-                    </Box>
+
+                      <Stack
+                        direction="row"
+                        spacing="4px"
+                        sx={{ color: "#5F5F5F" }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          1 variant
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing="8px"
+                        sx={{ alignItems: "center" }}
+                      >
+                        <img src={ellipse3} alt="" />
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                            color: "#232323",
+                          }}
+                        >
+                          Wearnes Automotive
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Box>
-                </Grid>
-                <Grid item xs>
-                  <Box
-                    sx={{
-                      height: "361px",
-                      width: "281px",
-                      border: "1px solid #E0E0E0",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
-                    }}
-                  >
-                    <img src={rectangle6736} alt="" height="187px" />
-                    <Box sx={{ padding: "16px 0 24px 16px" }}>
-                      <Stack spacing="8px">
+                </Box>
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    height: "361px",
+                    width: "281px",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
+                  }}
+                >
+                  <img src={rectangle6736} alt="" height="187px" />
+                  <Box sx={{ padding: "16px 0 24px 16px" }}>
+                    <Stack spacing="8px">
+                      <Typography
+                        sx={{
+                          color: "#232323",
+                          fontSize: "16px",
+                          fontWeight: 600,
+                          lineHeight: "24px",
+                        }}
+                      >
+                        Aston Martin DB11
+                      </Typography>
+                      <Stack direction="row" spacing="8px">
                         <Typography
                           sx={{
                             color: "#232323",
                             fontSize: "16px",
-                            fontWeight: 600,
+                            fontWeight: 400,
                             lineHeight: "24px",
                           }}
                         >
-                          Aston Martin DB11
+                          From{" "}
+                          <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
+                            $799,000
+                          </span>
                         </Typography>
-                        <Stack direction="row" spacing="8px">
-                          <Typography
-                            sx={{
-                              color: "#232323",
-                              fontSize: "16px",
-                              fontWeight: 400,
-                              lineHeight: "24px",
-                            }}
-                          >
-                            From{" "}
-                            <span style={{ color: "#0F5EDD", fontWeight: 600 }}>
-                              $799,000
-                            </span>
-                          </Typography>
-                          <Box
-                            sx={{
-                              width: "72px",
-                              height: "24px",
-                              backgroundColor: "#E5EEFB",
-                              borderRadius: "2px",
-                            }}
-                          >
-                            <Box sx={{ padding: "2px 4px" }}>
-                              <Typography
-                                sx={{
-                                  color: "#0F5EDD",
-                                  fontSize: "12px",
-                                  fontWeight: 400,
-                                  lineHeight: "20px",
-                                }}
-                              >
-                                $2,302/mo
-                              </Typography>
-                            </Box>
+                        <Box
+                          sx={{
+                            width: "72px",
+                            height: "24px",
+                            backgroundColor: "#E5EEFB",
+                            borderRadius: "2px",
+                          }}
+                        >
+                          <Box sx={{ padding: "2px 4px" }}>
+                            <Typography
+                              sx={{
+                                color: "#0F5EDD",
+                                fontSize: "12px",
+                                fontWeight: 400,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              $2,302/mo
+                            </Typography>
                           </Box>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="4px"
-                          sx={{ color: "#5F5F5F" }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            1 variant
-                          </Typography>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="8px"
-                          sx={{ alignItems: "center" }}
-                        >
-                          <img src={ellipse3} alt="" />
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                              color: "#232323",
-                            }}
-                          >
-                            Wearnes Automotive
-                          </Typography>
-                        </Stack>
+                        </Box>
                       </Stack>
-                    </Box>
+
+                      <Stack
+                        direction="row"
+                        spacing="4px"
+                        sx={{ color: "#5F5F5F" }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          1 variant
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing="8px"
+                        sx={{ alignItems: "center" }}
+                      >
+                        <img src={ellipse3} alt="" />
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                            color: "#232323",
+                          }}
+                        >
+                          Wearnes Automotive
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Box>
-                </Grid>
-                <Grid item xs>
-                  <Box
-                    sx={{
-                      height: "361px",
-                      width: "281px",
-                      border: "1px solid #E0E0E0",
-                      borderRadius: "5px",
-                      boxShadow:
-                        "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
-                    }}
-                  >
-                    <img src={rectangle6737} alt="" height="187px" />
-                    <Box sx={{ padding: "16px 0 24px 16px" }}>
-                      <Stack spacing="8px">
+                </Box>
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    height: "361px",
+                    width: "281px",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "5px",
+                    boxShadow:
+                      "0px 8px 16px 0px #3031331A ,0px 0px 1px 0px #3031330D",
+                  }}
+                >
+                  <img src={rectangle6737} alt="" height="187px" />
+                  <Box sx={{ padding: "16px 0 24px 16px" }}>
+                    <Stack spacing="8px">
+                      <Typography
+                        sx={{
+                          color: "#232323",
+                          fontSize: "16px",
+                          fontWeight: 600,
+                          lineHeight: "24px",
+                        }}
+                      >
+                        Aston Martin DB11 Volante
+                      </Typography>
+                      <Stack direction="row" spacing="8px">
                         <Typography
                           sx={{
                             color: "#232323",
                             fontSize: "16px",
-                            fontWeight: 600,
+                            fontWeight: 400,
                             lineHeight: "24px",
                           }}
                         >
-                          Aston Martin DB11 Volante
+                          POA
                         </Typography>
-                        <Stack direction="row" spacing="8px">
-                          <Typography
-                            sx={{
-                              color: "#232323",
-                              fontSize: "16px",
-                              fontWeight: 400,
-                              lineHeight: "24px",
-                            }}
-                          >
-                            POA
-                          </Typography>
-                          <Box
-                            sx={{
-                              width: "72px",
-                              height: "24px",
-                              backgroundColor: "#E5EEFB",
-                              borderRadius: "2px",
-                            }}
-                          >
-                            <Box sx={{ padding: "2px 4px" }}>
-                              <Typography
-                                sx={{
-                                  color: "#0F5EDD",
-                                  fontSize: "12px",
-                                  fontWeight: 400,
-                                  lineHeight: "20px",
-                                }}
-                              >
-                                $2,302/mo
-                              </Typography>
-                            </Box>
+                        <Box
+                          sx={{
+                            width: "72px",
+                            height: "24px",
+                            backgroundColor: "#E5EEFB",
+                            borderRadius: "2px",
+                          }}
+                        >
+                          <Box sx={{ padding: "2px 4px" }}>
+                            <Typography
+                              sx={{
+                                color: "#0F5EDD",
+                                fontSize: "12px",
+                                fontWeight: 400,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              $2,302/mo
+                            </Typography>
                           </Box>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="4px"
-                          sx={{ color: "#5F5F5F" }}
-                        >
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                            }}
-                          >
-                            1 variant
-                          </Typography>
-                        </Stack>
-
-                        <Stack
-                          direction="row"
-                          spacing="8px"
-                          sx={{ alignItems: "center" }}
-                        >
-                          <img src={ellipse3} alt="" />
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              lineHeight: "22px",
-                              fontFamily: "Poppins",
-                              color: "#232323",
-                            }}
-                          >
-                            Wearnes Automotive
-                          </Typography>
-                        </Stack>
+                        </Box>
                       </Stack>
-                    </Box>
+
+                      <Stack
+                        direction="row"
+                        spacing="4px"
+                        sx={{ color: "#5F5F5F" }}
+                      >
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                          }}
+                        >
+                          1 variant
+                        </Typography>
+                      </Stack>
+
+                      <Stack
+                        direction="row"
+                        spacing="8px"
+                        sx={{ alignItems: "center" }}
+                      >
+                        <img src={ellipse3} alt="" />
+                        <Typography
+                          sx={{
+                            fontSize: "14px",
+                            fontWeight: 400,
+                            lineHeight: "22px",
+                            fontFamily: "Poppins",
+                            color: "#232323",
+                          }}
+                        >
+                          Wearnes Automotive
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Box>
-                </Grid>
-              </Grid>
+                </Box>
+              </Box>
             </Stack>
           </Box>
           <Box sx={{ textAlign: "center" }}>

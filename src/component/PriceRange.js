@@ -119,10 +119,11 @@ function PriceRange({ priceRange, setPriceRange }) {
   };
 
   const open = Boolean(priceRange);
-
+  const id = open ? "priceRange" : undefined;
   return (
     <Popover
       className="priceRange"
+      id={id}
       open={open}
       anchorEl={priceRange}
       onClose={handleClose}
