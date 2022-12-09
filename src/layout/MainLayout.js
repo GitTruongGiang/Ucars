@@ -6,7 +6,7 @@ import MainHeader from "./mainHeader/MainHeader";
 
 function MainLayout() {
   return (
-    <Box>
+    <Box sx={{ margin: "0 auto" }}>
       <MainHeader />
       <Outlet />
       <MainFooter />

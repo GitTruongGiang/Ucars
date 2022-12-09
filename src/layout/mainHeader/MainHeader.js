@@ -32,7 +32,7 @@ function MainHeader() {
   };
 
   return (
-    <Box component="div">
+    <Box component="div" sx={{ width: { xs: "375px", lg: "1366px" } }}>
       <Box
         sx={{
           padding: { xs: "7px 10px", lg: "11px 60px" },
