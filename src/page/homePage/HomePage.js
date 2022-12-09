@@ -1428,8 +1428,7 @@ function HomePage() {
         </Box>
       </Box>
 
-      <Box sx={{ position: "relative" }}>
-        <Box component="div" className="unsplash"></Box>
+      <Box component="div" className="unsplash" sx={{ position: "relative" }}>
         <Box
           sx={{
             position: "absolute",
