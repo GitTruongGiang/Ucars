@@ -16,7 +16,6 @@ import facebookIcon from "./imageFooter/Facebook-icon.png";
 import telegramIcon from "./imageFooter/Telegram-icon.png";
 import linkdinIcon from "./imageFooter/Linkdin-icon.png";
 import youtubeIcon from "./imageFooter/Youtube-icon.png";
-import ucarsGroup from "./imageFooter/UcarsGroup.png";
 import MainFooter1 from "./MainFooter1";
 import MainFooter2 from "./MainFooter2";
 
