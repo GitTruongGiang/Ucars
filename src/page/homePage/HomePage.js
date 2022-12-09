@@ -57,9 +57,8 @@ function HomePage() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -68,7 +67,7 @@ function HomePage() {
     <Box sx={{ width: { xs: "375px", lg: "1366px" } }}>
       <Box
         sx={{
-          padding: { xs: "50px 30px 80px 20px", lg: "160px 61px 80px 64px" },
+          padding: { xs: "50px 30px 50px 20px", lg: "160px 61px 80px 64px" },
         }}
       >
         <Box
@@ -845,9 +844,8 @@ function HomePage() {
         <Stack spacing="7px" sx={{ pt: "22px", textAlign: "center" }}>
           <Typography
             sx={{
-              fontSize: "48px",
+              fontSize: { xs: "36px", lg: "48px" },
               fontWeight: 700,
-              lineHeight: "72px",
               color: "#EE1B24",
             }}
           >
@@ -855,31 +853,34 @@ function HomePage() {
           </Typography>
           <Typography
             sx={{
-              fontSize: "32px",
-              lineHeight: "48px",
+              fontSize: { xs: "20px", lg: "32px" },
               color: "#FFFFFF",
             }}
           >
             This is how our products works
           </Typography>
         </Stack>
+
         <Box
           sx={{
-            padding: "142px 96px 139px 96px",
+            padding: {
+              xs: "40px 60px 40px 60px",
+              lg: "142px 96px 139px 96px",
+            },
             display: "flex",
+            flexWrap: "wrap",
             justifyContent: "space-between",
           }}
         >
-          <Box sx={{ textAlign: "center" }}>
-            <Box sx={{ mb: "46.5px" }}>
+          <Box sx={{ textAlign: "center", width: "338px", mb: { xs: "60px" } }}>
+            <Box sx={{ mb: { xs: "20px", lg: "46.5px" } }}>
               <img src={locationIcon} alt="" />
             </Box>
             <Stack spacing="11px">
               <Typography
                 sx={{
                   fontWeight: 500,
-                  fontSize: "36px",
-                  lineHeight: "54px",
+                  fontSize: { xs: "24px", lg: "36px" },
                   color: "white",
                   fontFamily: "Poppins",
                 }}
@@ -889,29 +890,26 @@ function HomePage() {
               <Typography
                 sx={{
                   fontWeight: 400,
-                  fontSize: "24px",
-                  lineHeight: "36px",
+                  fontSize: { xs: "16px", lg: "24px" },
                   color: "white",
                   fontFamily: "Poppins",
                 }}
               >
-                Our cars are located at prime
-                <br /> areas where by there won’t be
-                <br />
+                Our cars are located at prime areas where by there won’t be
                 problem with transportation
               </Typography>
             </Stack>
           </Box>
 
-          <Box sx={{ textAlign: "center" }}>
-            <Box sx={{ mb: "46.5px" }}>
+          <Box sx={{ textAlign: "center", width: "338px", mb: { xs: "60px" } }}>
+            <Box sx={{ mb: { xs: "20px", lg: "46.5px" } }}>
               <img src={smartHouse} alt="" />
             </Box>
             <Stack spacing="11px">
               <Typography
                 sx={{
                   fontWeight: 500,
-                  fontSize: "36px",
+                  fontSize: { xs: "24px", lg: "36px" },
                   lineHeight: "54px",
                   color: "white",
                   fontFamily: "Poppins",
@@ -922,29 +920,26 @@ function HomePage() {
               <Typography
                 sx={{
                   fontWeight: 400,
-                  fontSize: "24px",
-                  lineHeight: "36px",
+                  fontSize: { xs: "16px", lg: "24px" },
                   color: "white",
                   fontFamily: "Poppins",
                 }}
               >
-                Our estates comes with <br /> good network,portable <br />
-                water , 24hrs light and <br />
-                round the clock security.
+                Our estates comes with good network,portable water , 24hrs light
+                and round the clock security.
               </Typography>
             </Stack>
           </Box>
 
-          <Box sx={{ textAlign: "center" }}>
-            <Box sx={{ mb: "46.5px" }}>
+          <Box sx={{ textAlign: "center", width: "338px" }}>
+            <Box sx={{ mb: { xs: "20px", lg: "46.5px" } }}>
               <img src={Secure} alt="" />
             </Box>
             <Stack spacing="11px">
               <Typography
                 sx={{
                   fontWeight: 500,
-                  fontSize: "36px",
-                  lineHeight: "54px",
+                  fontSize: { xs: "24px", lg: "36px" },
                   color: "white",
                   fontFamily: "Poppins",
                 }}
@@ -954,45 +949,52 @@ function HomePage() {
               <Typography
                 sx={{
                   fontWeight: 400,
-                  fontSize: "24px",
-                  lineHeight: "36px",
+                  fontSize: { xs: "16px", lg: "24px" },
                   color: "white",
                   fontFamily: "Poppins",
                 }}
               >
-                We have been in business
-                <br /> for over 32 years,for client
-                <br /> outside the country you can
-                <br /> trust us to deliver well.
+                We have been in business for over 32 years,for client outside
+                the country you can trust us to deliver well.
               </Typography>
             </Stack>
           </Box>
         </Box>
       </Box>
 
-      <Box sx={{ padding: "80px 0px 80px 64px" }}>
-        <Box sx={{ padding: "0 60px 60px 0" }}>
+      <Box
+        sx={{
+          padding: { xs: "40px 10px 10px 10px", lg: "80px 0px 80px 64px" },
+        }}
+      >
+        <Box sx={{ padding: { xs: "0 0px 0px 0", lg: "0 60px 60px 0" } }}>
           <Stack spacing="7px">
             <Typography
               sx={{
                 fontWeight: 700,
-                fontSize: "48px",
-                lineHeight: "72px",
+                fontSize: { xs: "32px", lg: "48px" },
                 color: "#EE1B24",
                 fontFamily: "Poppins",
+                textAlign: { xs: "center", lg: "start" },
               }}
             >
               Our Featured Vehicles.
             </Typography>
 
-            <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
+              }}
+            >
               <Typography
                 sx={{
                   fontWeight: 400,
-                  fontSize: "32px",
-                  lineHeight: "48px",
+                  fontSize: { xs: "20px", lg: "32px" },
                   color: "#232323",
                   fontFamily: "Poppins",
+                  textAlign: { xs: "center" },
                 }}
               >
                 One of our biggest product to be featured
@@ -1006,8 +1008,8 @@ function HomePage() {
                   backgroundColor: "#EE1B24",
                   color: "white",
                   fontSize: "16px",
-                  lineHeight: "19.36px",
                   alignSelf: "end",
+                  mt: { xs: "10px" },
                   ":hover": {
                     backgroundColor: "white",
                     color: "#EE1B24",
@@ -1024,12 +1026,22 @@ function HomePage() {
         <Box sx={{ paddingBottom: "50px", cursor: "pointer" }}>
           <Slider {...settings}>
             <Box>
-              <Box sx={{ padding: "7.94px 26.53px 0 38.93px" }}>
+              <Box
+                sx={{
+                  padding: {
+                    xs: "7.94px 0px 0 0px",
+                    lg: "7.94px 26.53px 0 38.93px",
+                  },
+                }}
+              >
                 <img src={rectangle4} alt="" />
               </Box>
               <Box
                 sx={{
-                  padding: "56.79px 18.68px 14.3px 38.93px",
+                  padding: {
+                    xs: "56.79px 10px 14.3px 10px",
+                    lg: "56.79px 18.68px 14.3px 38.93px",
+                  },
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "baseline",
@@ -1040,7 +1052,6 @@ function HomePage() {
                     sx={{
                       fontWeight: 500,
                       fontSize: "31.78px",
-                      lineHeight: "47.76px",
                       color: "#232323",
                       fontFamily: "Poppins",
                     }}
@@ -1051,7 +1062,6 @@ function HomePage() {
                     sx={{
                       fontWeight: 400,
                       fontSize: "19.7px",
-                      lineHeight: "28.6px",
                       color: "#232323",
                       fontFamily: "Poppins",
                     }}
@@ -1064,7 +1074,6 @@ function HomePage() {
                     sx={{
                       fontWeight: 400,
                       fontSize: "19.7px",
-                      lineHeight: "28.6px",
                       color: "#232323",
                       fontFamily: "Poppins",
                     }}
@@ -1075,7 +1084,6 @@ function HomePage() {
                     sx={{
                       fontWeight: 700,
                       fontSize: "19.7px",
-                      lineHeight: "28.6px",
                       color: "#EE1B24",
                       fontFamily: "Poppins",
                     }}
@@ -1087,12 +1095,22 @@ function HomePage() {
             </Box>
 
             <Box>
-              <Box sx={{ padding: "7.94px 26.53px 0 38.93px" }}>
+              <Box
+                sx={{
+                  padding: {
+                    xs: "7.94px 0px 0 0px",
+                    lg: "7.94px 26.53px 0 38.93px",
+                  },
+                }}
+              >
                 <img src={rectangle41} alt="" />
               </Box>
               <Box
                 sx={{
-                  padding: "56.79px 18.68px 14.3px 38.93px",
+                  padding: {
+                    xs: "56.79px 10px 14.3px 10px",
+                    lg: "56.79px 18.68px 14.3px 38.93px",
+                  },
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "baseline",
@@ -1150,18 +1168,35 @@ function HomePage() {
             </Box>
 
             <Box>
-              <Box sx={{ padding: "7.94px 26.53px 0 38.93px" }}>
+              <Box
+                sx={{
+                  padding: {
+                    xs: "7.94px 0px 0 0px",
+                    lg: "7.94px 26.53px 0 38.93px",
+                  },
+                }}
+              >
                 <img src={rectangle700} alt="" />
               </Box>
             </Box>
 
             <Box>
-              <Box sx={{ padding: "7.94px 26.53px 0 38.93px" }}>
+              <Box
+                sx={{
+                  padding: {
+                    xs: "7.94px 0px 0 0px",
+                    lg: "7.94px 26.53px 0 38.93px",
+                  },
+                }}
+              >
                 <img src={rectangle42} alt="" />
               </Box>
               <Box
                 sx={{
-                  padding: "56.79px 18.68px 14.3px 38.93px",
+                  padding: {
+                    xs: "56.79px 10px 14.3px 10px",
+                    lg: "56.79px 18.68px 14.3px 38.93px",
+                  },
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "baseline",
@@ -1219,12 +1254,22 @@ function HomePage() {
             </Box>
 
             <Box>
-              <Box sx={{ padding: "7.94px 26.53px 0 38.93px" }}>
+              <Box
+                sx={{
+                  padding: {
+                    xs: "7.94px 0px 0 0px",
+                    lg: "7.94px 26.53px 0 38.93px",
+                  },
+                }}
+              >
                 <img src={rectangle4} alt="" />
               </Box>
               <Box
                 sx={{
-                  padding: "56.79px 18.68px 14.3px 38.93px",
+                  padding: {
+                    xs: "56.79px 10px 14.3px 10px",
+                    lg: "56.79px 18.68px 14.3px 38.93px",
+                  },
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "baseline",
@@ -1282,12 +1327,22 @@ function HomePage() {
             </Box>
 
             <Box>
-              <Box sx={{ padding: "7.94px 26.53px 0 38.93px" }}>
+              <Box
+                sx={{
+                  padding: {
+                    xs: "7.94px 0px 0 0px",
+                    lg: "7.94px 26.53px 0 38.93px",
+                  },
+                }}
+              >
                 <img src={rectangle41} alt="" />
               </Box>
               <Box
                 sx={{
-                  padding: "56.79px 18.68px 14.3px 38.93px",
+                  padding: {
+                    xs: "56.79px 10px 14.3px 10px",
+                    lg: "56.79px 18.68px 14.3px 38.93px",
+                  },
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "baseline",
@@ -1348,17 +1403,31 @@ function HomePage() {
       </Box>
 
       <Box sx={{ position: "relative" }}>
-        <img src={unsplash} alt="" />
-        <Box sx={{ position: "absolute", top: "80px", left: "80px" }}>
-          <Stack spacing="18px">
-            <Box sx={{ width: "390px" }}>
+        <Box component="div" className="unsplash"></Box>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "80px",
+            left: { xs: "20px", lg: "80px" },
+          }}
+        >
+          <Stack
+            spacing={{ xs: "206px", lg: "18px" }}
+            sx={{ width: { xs: "335px", lg: "410px" } }}
+          >
+            <Box
+              sx={{
+                width: { xs: "246px", lg: "390px" },
+                margin: "0 auto",
+              }}
+            >
               <Typography
                 sx={{
                   fontWeight: 600,
-                  fontSize: "76px",
-                  lineHeight: "114px",
+                  fontSize: { xs: "48px", lg: "76px" },
                   color: "white",
                   fontFamily: "Poppins",
+                  textAlign: { xs: "center", lg: "start" },
                 }}
               >
                 Questions about buying or renting?
@@ -1366,14 +1435,13 @@ function HomePage() {
             </Box>
             <Button
               sx={{
-                width: "410px",
+                width: "100%",
                 height: "60px",
                 borderRadius: "5px",
                 backgroundColor: "#EE1B24",
                 color: "white",
                 fontSize: "16px",
                 fontWeight: 700,
-                lineHeight: "18.75px",
                 ":hover": { backgroundColor: "white", color: "#EE1B24" },
               }}
             >
@@ -1383,7 +1451,7 @@ function HomePage() {
         </Box>
       </Box>
 
-      <Box sx={{ mt: "80px" }}>
+      <Box sx={{ mt: "80px", display: { xs: "none", lg: "block" } }}>
         <Box sx={{ padding: "40px 91px 40px 90px" }}>
           <Stack spacing="16px">
             <Typography

@@ -1,13 +1,4 @@
-import {
-  Button,
-  Divider,
-  IconButton,
-  Link,
-  Popover,
-  Popper,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Button, Link, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Link as routerLink } from "react-router-dom";
 import React from "react";
@@ -18,8 +9,6 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import ucarsGround from "./imageHeader/UcarsGroup.png";
 import carsBackgroud from "./imageHeader/cars-backgroud-1.png";
-import divider from "./imageHeader/Divider.png";
-import keyboardArrowDown from "./imageHeader/KeyboardArrowDown.png";
 import dolarIcon from "./imageHeader/Dolar-icon.png";
 import UserNewCars from "../../component/UserNewCars";
 import PriceRange from "../../component/PriceRange";

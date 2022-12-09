@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Divider,
-  Input,
   Link,
   Stack,
   TextField,
@@ -10,6 +9,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { Link as routerLink } from "react-router-dom";
+import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 
 import CarbuyerLogo from "./imageFooter/Carbuyer-Logo-2.png";
 import locationIcon from "./imageFooter/Location-icon.png";
@@ -24,17 +24,41 @@ import ucarsGroup from "./imageFooter/UcarsGroup.png";
 
 function MainFooter() {
   return (
-    <Box component="div" sx={{ width: "1366px" }}>
-      <Box sx={{ padding: "52px 113.83px 42px 113.83px" }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box>
-            <Box sx={{ mb: "16px", background: "url(CBcomsg.png)" }}>
-              <img src={CarbuyerLogo} alt="" height="62px" width="299.76px" />
+    <Box
+      component="div"
+      sx={{ width: { xs: "375px", lg: "1366px" }, mt: { xs: "20px", lg: "0" } }}
+    >
+      <Box
+        sx={{ padding: { xs: "16px 24px", lg: "52px 113.83px 42px 113.83px" } }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+          }}
+        >
+          <Box sx={{ width: { xs: "375px" }, mb: { xs: "20px", lg: "0" } }}>
+            <Box sx={{ mb: "16px" }}>
+              <img
+                className="CarbuyerLogo"
+                src={CarbuyerLogo}
+                alt=""
+                height="62px"
+                width="299.76px"
+              />
             </Box>
+
             <Box>
-              <Box sx={{ display: "flex" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: { xs: "space-between", lg: "flex-start" },
+                }}
+              >
                 <Box sx={{ mr: "9.66px" }}>
                   <img
+                    className="locationIcon"
                     src={locationIcon}
                     alt=""
                     height="16px"
@@ -47,6 +71,7 @@ function MainFooter() {
                     lineHeight: "20px",
                     fontWeight: 400,
                     fontStyle: "normal",
+                    textAlign: { xs: "center" },
                   }}
                 >
                   71 Ayer Rajah Crescent, #06-14, Singapore 139951
@@ -54,7 +79,12 @@ function MainFooter() {
               </Box>
             </Box>
             <Box>
-              <Box sx={{ display: "flex" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: { xs: "space-between", lg: "flex-start" },
+                }}
+              >
                 <Box sx={{ mr: "9.66px" }}>
                   <img src={callIcon} alt="" height="16px" width="15.18px" />
                 </Box>
@@ -68,10 +98,16 @@ function MainFooter() {
                 >
                   +65 8808 7905
                 </Typography>
+                <Box component="div"></Box>
               </Box>
             </Box>
             <Box>
-              <Box sx={{ display: "flex" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: { xs: "space-between", lg: "flex-start" },
+                }}
+              >
                 <Box sx={{ mr: "9.66px" }}>
                   <img src={maillIcon} alt="" height="16px" width="15.18px" />
                 </Box>
@@ -85,10 +121,22 @@ function MainFooter() {
                 >
                   hello@carbuyer.com.sg
                 </Typography>
+                <Box component="div"></Box>
               </Box>
             </Box>
           </Box>
 
+          <Box
+            component="div"
+            sx={{
+              display: { xs: "block", lg: "none" },
+              backgroundColor: { xs: "#F1F2F5", lg: "" },
+              height: { xs: "1px", lg: "0" },
+              width: { xs: "100%", lg: "0" },
+              borderRadius: { xs: "1px solid #F1F2F5", lg: "" },
+              mb: { xs: "16px", lg: "0" },
+            }}
+          />
           <Box>
             <Box
               component="div"
