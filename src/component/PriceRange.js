@@ -132,7 +132,13 @@ function PriceRange({ priceRange, setPriceRange }) {
         horizontal: "left",
       }}
     >
-      <Box sx={{ padding: "24px", width: "400px", height: "238px" }}>
+      <Box
+        sx={{
+          padding: "24px",
+          width: { xs: "342px", lg: "400px" },
+          height: "238px",
+        }}
+      >
         <Stack spacing="16px">
           <Typography
             sx={{

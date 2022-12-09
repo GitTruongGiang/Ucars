@@ -47,7 +47,13 @@ function VehicleType({ vehicleType, setVehicleType }) {
         horizontal: "left",
       }}
     >
-      <Box sx={{ height: "350px", width: "473px", padding: "24px" }}>
+      <Box
+        sx={{
+          height: { xs: "400px", lg: "350px" },
+          width: { xs: "345px", lg: "473px" },
+          padding: { xs: "20px", lg: "24px" },
+        }}
+      >
         <Stack spacing="16px">
           <Typography
             sx={{
@@ -61,7 +67,11 @@ function VehicleType({ vehicleType, setVehicleType }) {
             Vehicle Type
           </Typography>
           <Box>
-            <Grid container spacing={1.5}>
+            <Grid
+              container
+              spacing={{ xs: 1, lg: 1.5 }}
+              sx={{ alignItems: "center" }}
+            >
               {vehicleTypeArray.map((type) => (
                 <Grid item xs={4} key={type}>
                   <Stack

@@ -32,11 +32,10 @@ function MainHeader() {
   };
 
   return (
-    <Box component="div" sx={{ width: { xs: "375px", lg: "1366px" } }}>
+    <Box>
       <Box
         sx={{
           padding: { xs: "7px 10px", lg: "11px 60px" },
-          width: { xs: "375px", lg: "1366px" },
         }}
       >
         <Box
@@ -121,7 +120,7 @@ function MainHeader() {
         component="div"
         sx={{
           backgroundColor: "#232323",
-          width: { xs: "375px", lg: "1366px" },
+          // width: { xs: "375px", lg: "1366px" },
         }}
       >
         <Box
@@ -215,13 +214,7 @@ function MainHeader() {
       </Box>
 
       <Box sx={{ position: "relative" }}>
-        <img
-          className="carsBackgroud"
-          src={carsBackgroud}
-          alt=""
-          width="1366px"
-          height="100%"
-        />
+        <Box component="img" src={carsBackgroud} sx={{ width: "100%" }} />
         <Box
           sx={{
             position: "absolute",

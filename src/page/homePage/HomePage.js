@@ -64,17 +64,13 @@ function HomePage() {
     ],
   };
   return (
-    <Box sx={{ width: { xs: "375px", lg: "1366px" } }}>
+    <Box>
       <Box
         sx={{
           padding: { xs: "50px 30px 50px 20px", lg: "160px 61px 80px 64px" },
         }}
       >
-        <Box
-          sx={{
-            width: { xs: "349px", lg: "1242px" },
-          }}
-        >
+        <Box>
           <Box
             sx={{
               display: "flex",
@@ -1034,7 +1030,12 @@ function HomePage() {
                   },
                 }}
               >
-                <img src={rectangle4} alt="" />
+                <Box
+                  component="img"
+                  src={rectangle4}
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
               </Box>
               <Box
                 sx={{
@@ -1103,7 +1104,12 @@ function HomePage() {
                   },
                 }}
               >
-                <img src={rectangle41} alt="" />
+                <Box
+                  component="img"
+                  src={rectangle41}
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
               </Box>
               <Box
                 sx={{
@@ -1176,7 +1182,12 @@ function HomePage() {
                   },
                 }}
               >
-                <img src={rectangle700} alt="" />
+                <Box
+                  component="img"
+                  src={rectangle700}
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
               </Box>
             </Box>
 
@@ -1189,7 +1200,12 @@ function HomePage() {
                   },
                 }}
               >
-                <img src={rectangle42} alt="" />
+                <Box
+                  component="img"
+                  src={rectangle42}
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
               </Box>
               <Box
                 sx={{
@@ -1262,7 +1278,12 @@ function HomePage() {
                   },
                 }}
               >
-                <img src={rectangle4} alt="" />
+                <Box
+                  component="img"
+                  src={rectangle4}
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
               </Box>
               <Box
                 sx={{
@@ -1335,7 +1356,12 @@ function HomePage() {
                   },
                 }}
               >
-                <img src={rectangle41} alt="" />
+                <Box
+                  component="img"
+                  src={rectangle41}
+                  alt=""
+                  sx={{ width: "100%" }}
+                />
               </Box>
               <Box
                 sx={{

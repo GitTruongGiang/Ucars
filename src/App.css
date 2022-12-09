@@ -33,7 +33,9 @@ body {
 }
 .unsplash {
   background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc.png");
+  width: 100%;
   height: 694px;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
@@ -41,14 +43,11 @@ body {
     height: 20px;
     width: 80px;
   }
-  .carsBackgroud {
-    width: 375px;
-  }
   .unsplash {
     background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc-1.png");
     height: 694px;
-    width: 375px;
-    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
   }
   .CarbuyerLogo {
     width: 158px;
@@ -57,5 +56,30 @@ body {
   .locationIcon {
     width: 14px;
     height: 14px;
+  }
+  .slick-next:before {
+    display: none;
+  }
+  .slick-next {
+    right: 0;
+    display: none;
+  }
+  .slick-prev::before {
+    display: none;
+  }
+  .slick-prev {
+    flex: 0;
+  }
+  #UserNewCars {
+    left: 10px;
+    top: 10px;
+  }
+  #priceRange {
+    top: 0px;
+    left: 0px;
+  }
+  #vehicleType {
+    top: 0px;
+    left: 0px;
   }
 }
