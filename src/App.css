@@ -37,6 +37,7 @@ body {
 .unsplash {
   background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc.png");
   width: 100%;
+  background-size: cover;
   height: 694px;
   background-repeat: no-repeat;
   margin: 0;
@@ -47,6 +48,7 @@ body {
     background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc-1.png");
     height: 694px;
     width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .carsBackgroud {
