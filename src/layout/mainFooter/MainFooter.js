@@ -30,7 +30,7 @@ function MainFooter() {
       <Box
         sx={{
           padding: {
-            xs: "16px 24px",
+            xs: "16px 16px",
             lg: "52px 113.83px 42px 113.83px",
           },
         }}
