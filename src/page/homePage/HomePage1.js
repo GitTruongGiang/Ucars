@@ -23,13 +23,19 @@ function HomePage1() {
         width: { xs: "375px", lg: "1366px" },
       }}
     >
-      <Box sx={{ width: "1241px", height: { xs: "425px", lg: "810px" } }}>
-        <Box sx={{ width: { xs: "375px", lg: "1241px" } }}>
+      <Box
+        sx={{
+          width: { xs: "375px", lg: "1241px" },
+          height: { xs: "425px", lg: "810px" },
+        }}
+      >
+        <Box
+          sx={{ width: { xs: "349px", lg: "1241px" }, height: { lg: "746px" } }}
+        >
           <Box
             className="scroll"
             sx={{
               display: "flex",
-              flexWrap: { xs: "nowrap", lg: "wrap" },
               justifyContent: { xs: "space-between", lg: "flex-start" },
               flexDirection: "row",
               gap: "24px",
@@ -996,6 +1002,7 @@ function HomePage1() {
             </Box>
           </Box>
         </Box>
+
         <Box
           sx={{
             alignItems: "center",

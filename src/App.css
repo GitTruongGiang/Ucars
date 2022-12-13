@@ -45,8 +45,11 @@ body {
 .sub div {
   height: 38px;
 }
-.slick-list {
+.slick-slider {
   width: 1366px;
+  position: absolute !important;
+  top: 175px;
+  left: 0px;
 }
 .slick-track {
   display: flex !important;
@@ -58,7 +61,6 @@ body {
 .slick-track::before,
 .slick-track::after {
   content: none;
-  display: block;
 }
 .slick-slide {
   width: 415px !important;
@@ -85,6 +87,9 @@ body {
   .CarbuyerLogo {
     width: 158px;
     height: 48px;
+  }
+  .slick-slider {
+    width: 375px;
   }
   .locationIcon {
     width: 14px;
