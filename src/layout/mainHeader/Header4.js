@@ -128,7 +128,7 @@ function Header4() {
           justifyContent: { xs: "center" },
           padding: { xs: "5px 16px", lg: "0px" },
           boxShadow: { xs: "inset 0px -1px 0px #F1F1F1", lg: "0" },
-          width: { xs: "333px", lg: "210.26px" },
+          width: { xs: "333px", lg: "332.92px" },
           height: { xs: "120px", lg: "89px" },
         }}
       >
