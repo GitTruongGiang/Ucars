@@ -30,12 +30,13 @@ function HomePage1() {
         }}
       >
         <Box
-          sx={{ width: { xs: "349px", lg: "1241px" }, height: { lg: "746px" } }}
+          sx={{ width: { xs: "375px", lg: "1241px" }, height: { lg: "746px" } }}
         >
           <Box
             className="scroll"
             sx={{
               display: "flex",
+              flexWrap: { xs: "nowrap", lg: "wrap" },
               justifyContent: { xs: "space-between", lg: "flex-start" },
               flexDirection: "row",
               gap: "24px",
