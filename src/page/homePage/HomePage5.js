@@ -3,9 +3,24 @@ import React from "react";
 
 function HomePage5() {
   return (
-    <Box sx={{ mt: "80px", display: { xs: "none", lg: "block" } }}>
+    <Box
+      sx={{
+        mt: "80px",
+        display: { xs: "none", lg: "block" },
+        backgroundColor: "#F1F1F1",
+        width: "1366px",
+      }}
+    >
       <Box sx={{ padding: "40px 91px 40px 90px" }}>
-        <Stack spacing="16px">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: "16px",
+            padding: "0",
+          }}
+        >
           <Typography
             sx={{
               fontWeight: 600,
@@ -13,11 +28,20 @@ function HomePage5() {
               lineHeight: "24px",
               color: "#5F5F5F",
               fontFamily: "Poppins",
+              fontStyle: "normal",
             }}
           >
             UCARS - Revolutionizing The Online Car Marketplace In Singapore
           </Typography>
-          <Stack spacing="24px">
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: "24px",
+              padding: "0",
+            }}
+          >
             <Box>
               <Typography
                 sx={{
@@ -26,6 +50,7 @@ function HomePage5() {
                   lineHeight: "24px",
                   color: "#5F5F5F",
                   fontFamily: "Poppins",
+                  fontStyle: "normal",
                 }}
               >
                 Buy Used And New Cars Online
@@ -37,6 +62,7 @@ function HomePage5() {
                   lineHeight: "20px",
                   color: "#5F5F5F",
                   fontFamily: "Poppins",
+                  fontStyle: "normal",
                 }}
               >
                 Start your car buying journey with UCARS as we connect you
@@ -62,6 +88,7 @@ function HomePage5() {
                   lineHeight: "24px",
                   color: "#5F5F5F",
                   fontFamily: "Poppins",
+                  fontStyle: "normal",
                 }}
               >
                 Sell Your Car In An Instant With Confidence
@@ -73,6 +100,7 @@ function HomePage5() {
                   lineHeight: "20px",
                   color: "#5F5F5F",
                   fontFamily: "Poppins",
+                  fontStyle: "normal",
                 }}
               >
                 We all know how selling a car in Singapore can be a daunting
@@ -97,6 +125,7 @@ function HomePage5() {
                   lineHeight: "24px",
                   color: "#5F5F5F",
                   fontFamily: "Poppins",
+                  fontStyle: "normal",
                 }}
               >
                 The Ultimate Car Shopping Experience Online
@@ -108,6 +137,7 @@ function HomePage5() {
                   lineHeight: "20px",
                   color: "#5F5F5F",
                   fontFamily: "Poppins",
+                  fontStyle: "normal",
                 }}
               >
                 The Ultimate Car Shopping Experience Online UCARS platform is
@@ -125,8 +155,8 @@ function HomePage5() {
                 own pace.
               </Typography>
             </Box>
-          </Stack>
-        </Stack>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

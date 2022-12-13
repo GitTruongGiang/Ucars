@@ -8,8 +8,10 @@ function Header1() {
   return (
     <Box
       sx={{
-        padding: { xs: "7px 10px", lg: "11px 60px" },
+        padding: { xs: "7px 10px", lg: "19px 60px" },
         display: { xs: "none", lg: "block" },
+        width: { lg: "1366px" },
+        height: { lg: "72px" },
       }}
     >
       <Box
@@ -24,9 +26,21 @@ function Header1() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            flexDirection: "row",
+            padding: 0,
+            gap: "23px",
           }}
         >
-          <Stack direction="row" spacing={{ xs: "8px", lg: "12px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "flex-start",
+              padding: "0",
+              gap: "8px",
+            }}
+          >
             <PinDropIcon
               sx={{
                 height: { xs: "10px", lg: "20px" },
@@ -37,22 +51,36 @@ function Header1() {
               sx={{
                 fontSize: { xs: "8px", lg: "12px" },
                 fontFamily: "Poppins",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "20px",
+                color: "#232323",
               }}
             >
               71 Ayer Rajah Crescent, #06-14, <br /> Singapore 139951
             </Typography>
-          </Stack>
+          </Box>
 
           <Box
             sx={{
               backgroundColor: "#E3E3E3",
-              width: "1px",
-              height: { xs: "30px", lg: "50px" },
+              width: "50px",
+              height: "1px",
               margin: { xs: "0 10px", lg: "0 23px" },
+              transform: "rotate(-90deg)",
             }}
           ></Box>
 
-          <Stack direction="row" spacing="12px">
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "flex-start",
+              padding: "0",
+              gap: "8px",
+            }}
+          >
             <EmailIcon
               sx={{
                 height: { xs: "10px", lg: "20px" },
@@ -63,14 +91,24 @@ function Header1() {
               sx={{
                 fontSize: { xs: "8px", lg: "12px" },
                 fontFamily: "Poppins",
+                fontStyle: "normal",
               }}
             >
               Email us at: <br /> hello@carbuyer.com.sg
             </Typography>
-          </Stack>
+          </Box>
         </Box>
 
-        <Stack direction="row" spacing="12px">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            padding: "0",
+            gap: "8px",
+          }}
+        >
           <CallIcon
             sx={{
               height: { xs: "10px", lg: "20px" },
@@ -82,11 +120,13 @@ function Header1() {
               fontSize: { xs: "8px", lg: "12px" },
               lineHeight: { xs: "10px", lg: "20px" },
               fontFamily: "Inter",
+              fontStyle: "normal",
+              fontWeight: 500,
             }}
           >
             +65 8808 7905 <br /> +7 (700) 51 51 518
           </Typography>
-        </Stack>
+        </Box>
       </Box>
     </Box>
   );

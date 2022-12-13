@@ -8,13 +8,11 @@ function Header3() {
       className="carsBackgroud"
       sx={{
         position: "relative",
-        display: { xs: "flex", lg: "block" },
-        justifyContent: { xs: "center", lg: "flex-start" },
         backgroundSize: "cover",
-        width: { xs: "343px", lg: "100%" },
+        width: { xs: "343px", lg: "1366px" },
         height: { xs: "142px", lg: "529px" },
         borderRadius: { xs: "5px", lg: "0" },
-        margin: "0 auto",
+        margin: { xs: "0 auto", lg: "0" },
       }}
     >
       <Box
@@ -22,15 +20,32 @@ function Header3() {
           position: "absolute",
           top: { xs: "19.4px", lg: "97px" },
           left: { xs: "21.6px", lg: "108px" },
+          width: { xs: "230px", lg: "540px" },
+          height: { lg: "220px" },
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          padding: "0",
+          gap: { xs: "10px", lg: "32px" },
         }}
       >
-        <Stack spacing={{ xs: "3.2px", lg: "16px" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            padding: "0",
+            gap: { xs: "6px", lg: "16px" },
+          }}
+        >
           <Typography
             sx={{
-              fontSize: { xs: "20px", lg: "60px" },
+              fontSize: { xs: "18px", lg: "60px" },
               fontWeight: 700,
               color: "#FFFFFF",
               fontFamily: "Poppins",
+              fontStyle: "normal",
+              lineHeight: { xs: "20px", lg: "76px" },
             }}
           >
             Car Marketplace
@@ -39,23 +54,27 @@ function Header3() {
             sx={{
               fontSize: { xs: "8px", lg: "18px" },
               fontWeight: 400,
+              lineHeight: { xs: "10px", lg: "22px" },
+              fontStyle: "normal",
               color: "#FFFFFF",
               fontFamily: "Inter",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br /> Nunc odio in et, lectus sit lorem id integer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+            in et, lectus sit lorem id integer.
           </Typography>
-        </Stack>
+        </Box>
         <Button
           sx={{
             backgroundColor: "#EE1B24",
             color: "white",
-            padding: { xs: "4px 15px", lg: "11px 48px" },
+            width: { xs: "80px", lg: "196px" },
+            height: { xs: "20px", lg: "52px" },
             borderRadius: { xs: "3px", lg: "8px" },
-            mt: { xs: "8px", lg: "32px" },
-            fontSize: { xs: "8px", lg: "18px" },
+            fontSize: { xs: "6px", lg: "18px" },
             fontWeight: 600,
+            lineHeight: "30px",
+            fontStyle: "normal",
             fontFamily: "Inter",
             ":hover": {
               backgroundColor: "white",

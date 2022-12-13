@@ -26,236 +26,330 @@ function Header4() {
     <Box
       sx={{
         width: { xs: "349px", lg: "1242px" },
+        height: { xs: "436px", lg: "139px" },
         backgroundColor: "#FFFFFF",
         position: { xs: "static", lg: "absolute" },
         left: { xs: "0", lg: "62px" },
         top: { xs: "0", lg: "618px" },
-        borderRadius: "10px",
-        border: " 1px solid #E3E3E3",
+        borderRadius: { xs: "6px", lg: "10px" },
+        border: "1px solid #E3E3E3",
         boxShadow: "20px 20px 120px 15px rgba(0, 0, 0, 0.05)",
         margin: { xs: "0 auto", lg: "0" },
-        padding: { xs: "0", lg: "0px 40px" },
-        mt: { xs: "20px" },
+        padding: { xs: "8px", lg: "25px 40px" },
+        mt: { xs: "24px", lg: "0" },
+        display: "flex",
+        flexDirection: { xs: "column", lg: "row" },
+        gap: { xs: "0", lg: "40px" },
+        alignItems: { xs: "flex-start", lg: "center" },
       }}
     >
       <Box
+        component="div"
+        onClick={handleUserNewCars}
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: { xs: "wrap", lg: "nowrap" },
-          borderRadius: "10px 0 0 10px",
+          padding: { xs: "5px 16px", lg: "0px" },
+          boxShadow: { xs: "inset 0px -1px 0px #F1F1F1", lg: "0" },
+          width: { xs: "333px", lg: "210.26px" },
+          height: { xs: "120px", lg: "89px" },
+          display: { xs: "flex", lg: "flex" },
+          flexDirection: { xs: "column" },
+          alignItems: { xs: "flex-start" },
+          justifyContent: { xs: "center" },
         }}
       >
-        <Box
-          component="div"
+        <Typography
           sx={{
-            position: "relative",
-            padding: { xs: "10px 20px", lg: "10px 0" },
-            width: { xs: "100%" },
+            fontSize: "16px",
+            fontWeight: 500,
+            fontFamily: "Roboto",
+            color: "#232323",
+            lineHeight: "19px",
+            fontStyle: "normal",
+            display: "flex",
+            alignItems: "center",
           }}
-          onClick={handleUserNewCars}
         >
-          <Stack spacing="30px">
-            <Typography
-              sx={{
-                fontSize: "16px",
-                fontWeight: 500,
-                color: "#232323",
-              }}
-            >
-              New/ Used
-            </Typography>
-            <Stack
-              direction="row"
-              sx={{ justifyContent: { xs: "space-between" } }}
-            >
-              <Typography
-                sx={{
-                  color: "#5F5F5F",
-                  fontSize: "14px",
-                  fontWeight: 400,
-                }}
-              >
-                New Cars
-              </Typography>
+          New/ Used
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "15px 0",
+            gap: "10px",
+            width: { xs: "300.62px", lg: "210px" },
+            height: "54px",
+          }}
+        >
+          <Typography
+            sx={{
+              color: "#5F5F5F",
+              fontSize: "14px",
+              fontWeight: 400,
+              lineHeight: "16px",
+              display: "flex",
+              alignItems: "center",
+              fontFamily: "Roboto",
+              fontStyle: "normal",
+            }}
+          >
+            New Cars
+          </Typography>
 
-              <KeyboardArrowDownIcon
-                sx={{ padding: "0" }}
-                onClick={handleUserNewCars}
-              />
-            </Stack>
-          </Stack>
+          <KeyboardArrowDownIcon
+            sx={{ padding: "0", fontSize: "24px" }}
+            onClick={handleUserNewCars}
+          />
         </Box>
+      </Box>
 
-        <Box
+      <Box
+        sx={{
+          width: { xs: "60px", lg: "3px" },
+          height: { xs: "1px", lg: "60px" },
+          backgroundColor: "#E3E3E3",
+          // margin: { xs: "10px 0px", lg: "40px 40px" },
+          // border: "3px dashed #f1f1f1",
+          // backgroundColor: "#E3E3E3",
+          borderRadius: "20px",
+          display: { xs: "none", lg: "block" },
+        }}
+      />
+
+      <Box
+        component="div"
+        onClick={handlePriceRange}
+        sx={{
+          display: { xs: "flex", lg: "flex" },
+          flexDirection: { xs: "column" },
+          alignItems: { xs: "flex-start" },
+          justifyContent: { xs: "center" },
+          padding: { xs: "5px 16px", lg: "0px" },
+          boxShadow: { xs: "inset 0px -1px 0px #F1F1F1", lg: "0" },
+          width: { xs: "333px", lg: "210.26px" },
+          height: { xs: "120px", lg: "89px" },
+        }}
+      >
+        <Typography
           sx={{
-            width: { xs: "100%", lg: "4px" },
-            height: { xs: "1px", lg: "60px" },
-            margin: { xs: "10px 0px", lg: "40px 40px" },
-            backgroundColor: "#E3E3E3",
-          }}
-        />
-
-        <Box
-          component="div"
-          onClick={handlePriceRange}
-          sx={{
-            padding: { xs: "10px 20px", lg: "10px 0" },
-            width: { xs: "100%" },
-          }}
-        >
-          <Stack spacing="30px">
-            <Typography
-              sx={{
-                fontSize: "16px",
-                lineHeight: "19px",
-                fontWeight: 500,
-                color: "#232323",
-              }}
-            >
-              Price Range
-            </Typography>
-            <Stack
-              direction="row"
-              spacing={{ xs: "0", lg: "78.92px" }}
-              sx={{ justifyContent: { xs: "space-between" } }}
-            >
-              <Stack
-                direction="row"
-                spacing="18px"
-                sx={{ alignItems: "center" }}
-              >
-                <Stack direction="row" spacing="8px">
-                  <img src={dolarIcon} alt="" />
-                  <Typography
-                    sx={{
-                      color: "#5F5F5F",
-                      fontSize: "14px",
-                      lineHeight: "16px",
-                      fontWeight: 400,
-                    }}
-                  >
-                    $10,0000
-                  </Typography>
-                </Stack>
-
-                <Box
-                  sx={{
-                    backgroundColor: "#5F5F5F",
-                    width: "16px",
-                    height: "0px",
-                    border: "0.838476px solid #5F5F5F",
-                    transform: "rotate(-180deg)",
-                  }}
-                />
-
-                <Stack direction="row" spacing="8px">
-                  <img src={dolarIcon} alt="" />
-                  <Typography
-                    sx={{
-                      color: "#5F5F5F",
-                      fontSize: "14px",
-                      lineHeight: "16px",
-                      fontWeight: 400,
-                    }}
-                  >
-                    $100,0000
-                  </Typography>
-                </Stack>
-              </Stack>
-
-              <KeyboardArrowDownIcon
-                sx={{ padding: "0" }}
-                onClick={handlePriceRange}
-              />
-            </Stack>
-          </Stack>
-        </Box>
-
-        <Box
-          sx={{
-            width: { xs: "100%", lg: "4px" },
-            height: { xs: "1px", lg: "60px" },
-            margin: { lg: "40px 40px" },
-            backgroundColor: "#E3E3E3",
-          }}
-        />
-
-        <Box
-          component="div"
-          onClick={handleVehicleType}
-          sx={{
-            padding: { xs: "10px 20px", lg: "10px 0" },
-            width: { xs: "100%" },
+            fontSize: "16px",
+            fontWeight: 500,
+            fontFamily: "Roboto",
+            color: "#232323",
+            lineHeight: "19px",
+            fontStyle: "normal",
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          <Stack spacing="30px">
-            <Typography
+          Price Range
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "15px 0",
+            gap: "10px",
+            width: { xs: "301px", lg: "332.92px" },
+            height: { lg: "54px" },
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "0px",
+              gap: "17px",
+            }}
+          >
+            <Box
               sx={{
-                fontSize: "16px",
-                lineHeight: "19px",
-                fontWeight: 500,
-                color: "#232323",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "0px",
+                gap: "8px",
               }}
             >
-              Vehicle Type
-            </Typography>
-
-            <Stack
-              direction="row"
-              sx={{ justifyContent: { xs: "space-between" } }}
-            >
+              <img src={dolarIcon} alt="" />
               <Typography
                 sx={{
                   color: "#5F5F5F",
                   fontSize: "14px",
                   lineHeight: "16px",
                   fontWeight: 400,
+                  fontFamily: "Roboto",
+                  fontStyle: "normal",
+                  display: "flex",
+                  alignItems: "center",
                 }}
               >
-                Duplex
+                $10,0000
               </Typography>
-              <KeyboardArrowDownIcon
-                sx={{ padding: "0" }}
-                onClick={handleVehicleType}
-              />
-            </Stack>
-          </Stack>
-        </Box>
+            </Box>
 
-        <Box
-          sx={{
-            width: { xs: "100%", lg: "4px" },
-            height: { xs: "1px", lg: "60px" },
-            margin: { lg: "40px 40px" },
-            backgroundColor: "#fff",
-          }}
-        />
+            <Box
+              sx={{
+                backgroundColor: "#5F5F5F",
+                width: "16px",
+                height: "0px",
+                border: "0.838476px solid #5F5F5F",
+                transform: "rotate(-180deg)",
+              }}
+            />
 
-        <Box
-          sx={{
-            marginLeft: { xs: "0", lg: "34px" },
-            width: { xs: "100%" },
-            textAlign: "center",
-            padding: { xs: "10px", lg: "0" },
-          }}
-        >
-          <Button
-            variant="contained"
-            sx={{
-              width: { xs: "100%", lg: "140px" },
-              height: "60px",
-              borderRadius: "5px",
-              backgroundColor: "#EE1B24",
-              color: "white",
-              ":hover": { backgroundColor: "white", color: "#EE1B24" },
-            }}
-          >
-            Search
-          </Button>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "0",
+                gap: "8px",
+              }}
+            >
+              <img src={dolarIcon} alt="" />
+              <Typography
+                sx={{
+                  color: "#5F5F5F",
+                  fontSize: "14px",
+                  lineHeight: "16px",
+                  fontWeight: 400,
+                  fontFamily: "Roboto",
+                  fontStyle: "normal",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                $100,0000
+              </Typography>
+            </Box>
+          </Box>
+
+          <KeyboardArrowDownIcon
+            sx={{ padding: "0", fontSize: "24px" }}
+            onClick={handlePriceRange}
+          />
         </Box>
       </Box>
+
+      <Box
+        sx={{
+          width: { xs: "60px", lg: "3px" },
+          height: { xs: "1px", lg: "60px" },
+          backgroundColor: "#E3E3E3",
+          // margin: { xs: "10px 0px", lg: "40px 40px" },
+          // border: "3px dashed #f1f1f1",
+          // backgroundColor: "#E3E3E3",
+          borderRadius: "20px",
+          display: { xs: "none", lg: "block" },
+        }}
+      />
+
+      <Box
+        component="div"
+        onClick={handleVehicleType}
+        sx={{
+          display: { xs: "flex", lg: "flex" },
+          flexDirection: { xs: "column" },
+          alignItems: { xs: "flex-start" },
+          justifyContent: { xs: "center" },
+          padding: { xs: "5px 16px", lg: "0px" },
+          boxShadow: { xs: "inset 0px -1px 0px #F1F1F1", lg: "0" },
+          width: { xs: "333px", lg: "210.26px" },
+          height: { xs: "120px", lg: "89px" },
+        }}
+      >
+        <Typography
+          sx={{
+            fontSize: "16px",
+            fontWeight: 500,
+            fontFamily: "Roboto",
+            color: "#232323",
+            lineHeight: "19px",
+            fontStyle: "normal",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          Vehicle Type
+        </Typography>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "15px 0",
+            gap: "10px",
+            width: { xs: "300.62px", lg: "210px" },
+            height: "54px",
+          }}
+        >
+          <Box
+            sx={{
+              color: "#5F5F5F",
+              fontSize: "14px",
+              lineHeight: "16px",
+              fontWeight: 400,
+              fontFamily: "Roboto",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <Typography sx={{ display: { xs: "none", lg: "block" } }}>
+              Duplex
+            </Typography>
+            <Typography sx={{ display: { xs: "block", lg: "none" } }}>
+              +10 More
+            </Typography>
+          </Box>
+          <KeyboardArrowDownIcon
+            sx={{ padding: "0", fontSize: "24px" }}
+            onClick={handleVehicleType}
+          />
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          width: { xs: "60px", lg: "3px" },
+          height: { xs: "1px", lg: "60px" },
+          backgroundColor: "#E3E3E3",
+          // margin: { xs: "10px 0px", lg: "40px 40px" },
+          // border: "3px dashed #f1f1f1",
+          // backgroundColor: "#E3E3E3",
+          borderRadius: "20px",
+          display: { xs: "none", lg: "block" },
+        }}
+      />
+
+      <Button
+        variant="contained"
+        sx={{
+          width: { xs: "333px", lg: "140px" },
+          height: { xs: "60px", lg: "60px" },
+          padding: "16px 40px",
+          borderRadius: "5px",
+          backgroundColor: "#EE1B24",
+          fontSize: "16px",
+          fontFamily: "Roboto",
+          fontStyle: "normal",
+          lineHeight: "19px",
+          fontWeight: 700,
+          color: "white",
+          ":hover": { backgroundColor: "white", color: "#EE1B24" },
+        }}
+      >
+        Search
+      </Button>
 
       <UserNewCars userNewCars={userNewCars} setUserNewCars={setUserNewCars} />
       <PriceRange priceRange={priceRange} setPriceRange={setPriceRange} />

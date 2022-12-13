@@ -54,6 +54,7 @@ function MainFooter1() {
                 lineHeight: "20px",
                 fontWeight: 400,
                 fontStyle: "normal",
+                fontFamily: "Poppins",
                 textAlign: { xs: "center" },
               }}
             >
@@ -77,6 +78,7 @@ function MainFooter1() {
                 lineHeight: "20px",
                 fontWeight: 400,
                 fontStyle: "normal",
+                fontFamily: "Poppins",
               }}
             >
               +65 8808 7905
@@ -100,6 +102,7 @@ function MainFooter1() {
                 lineHeight: "20px",
                 fontWeight: 400,
                 fontStyle: "normal",
+                fontFamily: "Poppins",
               }}
             >
               hello@carbuyer.com.sg
@@ -126,6 +129,7 @@ function MainFooter1() {
         sx={{
           display: { xs: "none", lg: "flex" },
           flexDirection: "column",
+          alignItems: "flex-start",
         }}
       >
         <Link
@@ -138,11 +142,20 @@ function MainFooter1() {
             fontWeight: 600,
             color: "black",
             mb: "8px",
+            fontFamily: "Poppins",
           }}
         >
           About
         </Link>
-        <Stack spacing="12px">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: "12px",
+            padding: "0px",
+          }}
+        >
           <Link
             component={routerLink}
             to=""
@@ -152,6 +165,7 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             About Us
@@ -165,6 +179,7 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             Contact Us
@@ -178,11 +193,12 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             Careers
           </Link>
-        </Stack>
+        </Box>
       </Box>
 
       <Box
@@ -202,11 +218,20 @@ function MainFooter1() {
             fontWeight: 600,
             color: "black",
             mb: "8px",
+            fontFamily: "Poppins",
           }}
         >
           Services
         </Link>
-        <Stack spacing="12px">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: "12px",
+            padding: "0px",
+          }}
+        >
           <Link
             component={routerLink}
             to=""
@@ -216,6 +241,7 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             Buy Used Cars
@@ -229,6 +255,7 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             Buy New Cars
@@ -242,11 +269,12 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             Be a Dealer with UCARS
           </Link>
-        </Stack>
+        </Box>
       </Box>
 
       <Box
@@ -266,11 +294,20 @@ function MainFooter1() {
             fontWeight: 600,
             color: "black",
             mb: "8px",
+            fontFamily: "Poppins",
           }}
         >
           Resources
         </Link>
-        <Stack spacing="12px">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: "12px",
+            padding: "0px",
+          }}
+        >
           <Link
             component={routerLink}
             to=""
@@ -280,6 +317,7 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             News
@@ -293,6 +331,7 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             Sell My Car
@@ -306,15 +345,25 @@ function MainFooter1() {
               lineHeight: "24px",
               fontWeight: 400,
               color: "#5F5F5F",
+              fontFamily: "Poppins",
             }}
           >
             COE Prices
           </Link>
-        </Stack>
+        </Box>
       </Box>
 
       <Box sx={{ display: { xs: "none", lg: "block" } }}>
-        <Typography sx={{ color: "#232323", mb: "12px" }}>
+        <Typography
+          sx={{
+            color: "#232323",
+            mb: "12px",
+            fontFamily: "Poppins",
+            fontStyle: "normal",
+            fontSize: "14px",
+            lineHeight: "22px",
+          }}
+        >
           Get the <span style={{ color: "#EE1B24" }}>latest</span> automotive
           news sent to your inbox!
         </Typography>

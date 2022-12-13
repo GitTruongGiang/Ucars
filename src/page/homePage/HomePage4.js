@@ -3,7 +3,18 @@ import React from "react";
 
 function HomePage4() {
   return (
-    <Box component="div" className="unsplash" sx={{ position: "relative" }}>
+    <Box
+      component="div"
+      className="unsplash"
+      sx={{
+        position: "relative",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignItems: "flex-start",
+        padding: "80px",
+      }}
+    >
       <Box
         sx={{
           position: "absolute",
@@ -11,9 +22,15 @@ function HomePage4() {
           left: { xs: "20px", lg: "80px" },
         }}
       >
-        <Stack
-          spacing={{ xs: "206px", lg: "18px" }}
-          sx={{ width: { xs: "335px", lg: "410px" } }}
+        <Box
+          sx={{
+            width: { xs: "335px", lg: "410px" },
+            display: "flex",
+            flexDirection: "column",
+            gap: { xs: "186px", lg: "18px" },
+            alignItems: "flex-start",
+            padding: "0px",
+          }}
         >
           <Box
             sx={{
@@ -28,6 +45,8 @@ function HomePage4() {
                 color: "white",
                 fontFamily: "Poppins",
                 textAlign: { xs: "center", lg: "start" },
+                fontStyle: "normal",
+                lineHeight: { xs: "72px", lg: "114px" },
               }}
             >
               Questions about buying or renting?
@@ -35,19 +54,24 @@ function HomePage4() {
           </Box>
           <Button
             sx={{
-              width: "100%",
+              width: { xs: "335px", lg: "410px" },
               height: "60px",
+              padding: "16px 40px",
               borderRadius: "5px",
               backgroundColor: "#EE1B24",
               color: "white",
               fontSize: "16px",
               fontWeight: 700,
+              lineHeight: "19px",
+              fontFamily: "Roboto",
+              fontStyle: "normal",
+
               ":hover": { backgroundColor: "white", color: "#EE1B24" },
             }}
           >
             Ask Us
           </Button>
-        </Stack>
+        </Box>
       </Box>
     </Box>
   );

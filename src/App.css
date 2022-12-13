@@ -36,18 +36,46 @@ body {
 }
 .unsplash {
   background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc.png");
-  width: 100%;
+  width: 1366px;
   background-size: cover;
   height: 694px;
   background-repeat: no-repeat;
   margin: 0;
 }
-
+.sub div {
+  height: 38px;
+}
+.slick-list {
+  width: 1366px;
+}
+.slick-track {
+  display: flex !important;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0px;
+}
+.slick-track::before,
+.slick-track::after {
+  content: none;
+  display: block;
+}
+.slick-slide {
+  width: 415px !important;
+}
+.slick-prev {
+  left: 0 !important;
+  display: none !important;
+}
+.slick-next {
+  right: 0 !important;
+  display: none !important;
+}
 @media only screen and (min-width: 0px) and (max-width: 600px) {
   .unsplash {
     background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc-1.png");
     height: 694px;
-    width: 100%;
+    width: 375px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -62,18 +90,8 @@ body {
     width: 14px;
     height: 14px;
   }
-  .slick-next:before {
-    display: none;
-  }
-  .slick-next {
-    right: 0;
-    display: none;
-  }
-  .slick-prev::before {
-    display: none;
-  }
-  .slick-prev {
-    flex: 0;
+  .slick-list {
+    width: 455px;
   }
   #UserNewCars {
     left: 10px;

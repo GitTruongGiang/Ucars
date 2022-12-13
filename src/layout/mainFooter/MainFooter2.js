@@ -20,7 +20,11 @@ function MainFooter2() {
       </Box>
 
       <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Stack direction="row" spacing="8px" sx={{ alignItems: "baseline" }}>
+        <Stack
+          direction="row"
+          spacing="8px"
+          sx={{ alignItems: { xs: "center", lg: "baseline" } }}
+        >
           <img src={ucarsGroup} alt="" width="55.56px" height="16px" />
           <Typography
             sx={{ fontSize: { xs: "10px", lg: "14px" }, fontWeight: 400 }}

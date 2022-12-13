@@ -25,6 +25,7 @@ function MainFooter() {
       component="div"
       sx={{
         mt: { xs: "20px", lg: "0" },
+        width: { xs: "375px", lg: "1366px" },
       }}
     >
       <Box
@@ -188,6 +189,7 @@ function MainFooter() {
             }}
           >
             <TextField
+              className="sub"
               size="small"
               sx={{
                 width: "253.28px",
@@ -205,11 +207,12 @@ function MainFooter() {
                 borderRadius: "0px 5px 5px 0px ",
                 fontWeight: 600,
                 fontSize: "12px",
-                padding: "8px 14px",
+                padding: "8px 16px",
                 position: "absolute",
-                left: "67%",
+                left: { xs: "67%", lg: "67%" },
                 top: "0%",
-                height: "40px",
+                height: "38px",
+                width: "104px",
               }}
             >
               Subscribe
@@ -218,16 +221,25 @@ function MainFooter() {
 
           <Box>
             <Box sx={{ display: "flex", alignContent: "center" }}>
-              <Typography sx={{ fontSize: "14px", mr: "7px" }}>
+              <Typography
+                sx={{ fontSize: "14px", mr: { xs: "36px", lg: "7px" } }}
+              >
                 Follow us
               </Typography>
-              <Stack direction="row" spacing="15px">
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  gap: "8px",
+                }}
+              >
                 <img src={instagramIcon} alt="" height="20px" width="20px" />
                 <img src={facebookIcon} alt="" height="20px" width="20px" />
                 <img src={telegramIcon} alt="" height="20px" width="20px" />
                 <img src={linkdinIcon} alt="" height="20px" width="20px" />
                 <img src={youtubeIcon} alt="" height="20px" width="20px" />
-              </Stack>
+              </Box>
             </Box>
           </Box>
         </Box>
