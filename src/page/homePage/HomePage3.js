@@ -53,6 +53,7 @@ function HomePage3() {
           alignItems: "flex-start",
           gap: { xs: "32px", lg: "60px" },
           backgroundColor: { xs: " #E0E0E0", lg: "white" },
+          width: { xs: "375px", lg: "1366px" },
         }}
       >
         <Box
