@@ -39,7 +39,8 @@ function HomePage1() {
               justifyContent: { xs: "space-between", lg: "flex-start" },
               flexDirection: "row",
               gap: "24px",
-              overflowX: { xs: "scroll", lg: "hidden" },
+              overflowX: "auto",
+              overflowY: "hidden",
             }}
           >
             <Box>
