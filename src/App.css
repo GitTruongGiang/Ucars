@@ -47,9 +47,9 @@ body {
 }
 .slick-slider {
   width: 1366px;
-  position: absolute !important;
+  /* position: absolute !important;
   top: 175px;
-  left: 0px;
+  left: 0px; */
 }
 .slick-track {
   display: flex !important;

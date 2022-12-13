@@ -9,8 +9,8 @@ function HomePage2() {
     <Box
       sx={{
         backgroundColor: "#232323",
-        width: { xs: "375px", lg: "1366px" },
         height: { xs: "1253px", lg: "810px" },
+        width: { xs: "375px", lg: "1366px" },
       }}
     >
       <Box
@@ -21,6 +21,7 @@ function HomePage2() {
           alignItems: "center",
           padding: "0px",
           gap: "7px",
+          paddingTop: { xs: "22px", lg: "0px" },
         }}
       >
         <Typography
@@ -59,6 +60,7 @@ function HomePage2() {
           flexDirection: { xs: "column", lg: "row" },
           alignItems: "flex-start",
           gap: { xs: "60px", lg: "80px" },
+          margin: "0 auto",
         }}
       >
         <Box

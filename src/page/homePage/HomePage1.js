@@ -21,6 +21,7 @@ function HomePage1() {
       sx={{
         padding: { xs: "50px 0px 50px 13px", lg: "160px 36px 80px 64px" },
         width: { xs: "375px", lg: "1366px" },
+        margin: "0 auto",
       }}
     >
       <Box>

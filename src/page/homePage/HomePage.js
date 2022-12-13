@@ -13,7 +13,7 @@ function HomePage() {
 
       <HomePage2 />
 
-      {/* <HomePage3 /> */}
+      <HomePage3 />
 
       {/* <HomePage4 /> */}
 

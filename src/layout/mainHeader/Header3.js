@@ -9,6 +9,7 @@ function Header3() {
       sx={{
         position: "relative",
         backgroundSize: "cover",
+        objectFit: "cover",
         width: { xs: "343px", lg: "1366px" },
         height: { xs: "142px", lg: "529px" },
         borderRadius: { xs: "5px", lg: "0" },

@@ -54,18 +54,16 @@ function HomePage3() {
           gap: { xs: "32px", lg: "60px" },
           backgroundColor: { xs: " #E0E0E0", lg: "white" },
           width: { xs: "375px", lg: "1366px" },
-          height: { xs: "637px", lg: "637px" },
-          position: "relative",
         }}
       >
-        {/* <Box
+        <Box
           sx={{
             display: "flex",
             flexDirection: "row",
             alignItems: "flex-end",
             justifyContent: "space-between",
             gap: "109px",
-            width: { lg: "1242px" },
+            width: { xs: "373px", lg: "1242px" },
           }}
         >
           <Box
@@ -76,7 +74,6 @@ function HomePage3() {
               justifyContent: "center",
               gap: "7px",
               width: { xs: "373px", lg: "678px" },
-              // height: { xs: "143px", lg: "167px" },
             }}
           >
             <Typography
@@ -119,7 +116,7 @@ function HomePage3() {
               fontWeight: 600,
               alignSelf: "end",
               display: { xs: "none", lg: "flex" },
-              mt: { xs: "10px" },
+              mt: { xs: "10px", lg: "0" },
               ":hover": {
                 backgroundColor: "white",
                 color: "#EE1B24",
@@ -129,9 +126,9 @@ function HomePage3() {
           >
             View More
           </Button>
-        </Box> */}
+        </Box>
 
-        {/* <Slider className="slider" {...settings}>
+        <Slider className="slider" {...settings}>
           <Box
             sx={{
               display: "flex !important",
@@ -646,7 +643,7 @@ function HomePage3() {
               </Box>
             </Box>
           </Box>
-        </Slider> */}
+        </Slider>
         {/* <Box
           sx={{
             display: "flex",
@@ -655,9 +652,6 @@ function HomePage3() {
             alignItems: "flex-start",
             padding: "0px",
             Width: { xs: "375px", lg: "1366px" },
-            position: "absolute",
-            top: { xs: "175px" },
-            left: "0px",
           }}
         >
           <Box
