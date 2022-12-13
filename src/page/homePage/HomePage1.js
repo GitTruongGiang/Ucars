@@ -21,7 +21,6 @@ function HomePage1() {
       sx={{
         padding: { xs: "50px 0px 50px 13px", lg: "160px 36px 80px 64px" },
         width: { xs: "375px", lg: "1366px" },
-        margin: "0 auto",
       }}
     >
       <Box>
@@ -36,9 +35,18 @@ function HomePage1() {
             gap: { xs: "39px", lg: "24px" },
             overflowX: "auto",
             overflowY: "hidden",
+            width: { xs: "2521px", lg: "1241px" },
           }}
         >
-          <img src={rectangle700} alt="" height="361px" width="281px" />
+          <Box
+            component="img"
+            src={rectangle700}
+            sx={{
+              height: "361px",
+              width: "281px",
+              display: { xs: "none", lg: "block" },
+            }}
+          />
 
           <Box
             sx={{
@@ -336,6 +344,16 @@ function HomePage1() {
               </Box>
             </Box>
           </Box>
+
+          <Box
+            component="img"
+            src={rectangle700}
+            sx={{
+              height: "361px",
+              width: "281px",
+              display: { xs: "block", lg: "none" },
+            }}
+          />
 
           <Box
             sx={{

@@ -23,7 +23,7 @@ function Header3() {
           left: { xs: "21.6px", lg: "108px" },
           width: { xs: "230px", lg: "540px" },
           height: { lg: "220px" },
-          display: "flex",
+          display: { xs: "none", lg: "flex" },
           flexDirection: "column",
           alignItems: "flex-start",
           padding: "0",
@@ -59,6 +59,8 @@ function Header3() {
               fontStyle: "normal",
               color: "#FFFFFF",
               fontFamily: "Inter",
+              width: { lg: "496px" },
+              height: { lg: "44px" },
             }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio

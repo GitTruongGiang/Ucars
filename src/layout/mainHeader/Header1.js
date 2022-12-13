@@ -8,7 +8,7 @@ function Header1() {
   return (
     <Box
       sx={{
-        padding: { xs: "7px 10px", lg: "19px 60px" },
+        padding: { xs: "7px 10px", lg: "11px 60px" },
         display: { xs: "none", lg: "block" },
         width: { lg: "1366px" },
         height: { lg: "72px" },

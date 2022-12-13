@@ -47,9 +47,6 @@ body {
 }
 .slick-slider {
   width: 1366px;
-  /* position: absolute !important;
-  top: 175px;
-  left: 0px; */
 }
 .slick-track {
   display: flex !important;
@@ -64,6 +61,7 @@ body {
 }
 .slick-slide {
   width: 415px !important;
+  height: 361px !important;
 }
 .slick-prev {
   left: 0 !important;
@@ -73,16 +71,22 @@ body {
   right: 0 !important;
   display: none !important;
 }
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-sizeSmall.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 253.28px;
+}
 @media only screen and (min-width: 0px) and (max-width: 600px) {
   .unsplash {
     background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc-1.png");
     height: 694px;
-    width: 375px;
+    width: 410px;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .carsBackgroud {
     background-image: url("./layout/mainHeader/imageHeader/cars-backgroud-1.png");
+  }
+  .carsBackgroud {
+    background-image: url("./layout/mainHeader/imageHeader/Rectangle\ 481.png");
   }
   .CarbuyerLogo {
     width: 158px;

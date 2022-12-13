@@ -74,6 +74,7 @@ function HomePage3() {
               justifyContent: "center",
               gap: "7px",
               width: { xs: "373px", lg: "678px" },
+              height: { lg: "164px" },
             }}
           >
             <Typography
@@ -97,6 +98,7 @@ function HomePage3() {
                 fontStyle: "normal",
                 lineHeight: { xs: "30px", lg: "48px" },
                 textAlign: { xs: "center", lg: "start" },
+                width: { lg: "681px" },
               }}
             >
               One of our biggest product to be featured and that has sold out
@@ -114,9 +116,9 @@ function HomePage3() {
               fontFamily: "Inter",
               fontStyle: "normal",
               fontWeight: 600,
-              alignSelf: "end",
               display: { xs: "none", lg: "flex" },
-              mt: { xs: "10px", lg: "0" },
+              // mt: { xs: "10px", lg: "0" },
+              lineHeight: "19px",
               ":hover": {
                 backgroundColor: "white",
                 color: "#EE1B24",
@@ -128,523 +130,7 @@ function HomePage3() {
           </Button>
         </Box>
 
-        <Slider className="slider" {...settings}>
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              padding: "7.94427px 15.8885px 14.2997px 38.9269px ",
-              gap: "17.48px ",
-              width: "415px !important",
-              height: "361px",
-              borderRadius: " 0px 39.7214px",
-              backgroundColor: "white",
-            }}
-          >
-            <Box
-              component="img"
-              src={rectangle4}
-              alt=""
-              sx={{ width: "349.55px", height: "202.58px" }}
-            />
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "flex-end",
-                flexDirection: "row",
-                padding: "0px",
-                gap: "114.4px",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "2.38px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    fontSize: "31.78px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "48px",
-                  }}
-                >
-                  The Palace
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                    opacity: "0.8",
-                  }}
-                >
-                  Lekki,phase 2
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "6.36px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  Duplex
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 700,
-                    fontSize: "19.7px",
-                    color: "#EE1B24",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  $2,000
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              padding: "7.94427px 15.8885px 14.2997px 38.9269px",
-              gap: "17.48px",
-              width: "415px !important",
-              height: "361px",
-              borderRadius: " 0px 39.7214px",
-              backgroundColor: "white",
-            }}
-          >
-            <Box
-              component="img"
-              src={rectangle41}
-              alt=""
-              sx={{ width: "349.55px", height: "202.58px" }}
-            />
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "flex-end",
-                flexDirection: "row",
-                gap: "114.4px",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  gap: "2.38px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    fontSize: "31.8px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "48px",
-                  }}
-                >
-                  The Palace
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                    opacity: "0.8",
-                  }}
-                >
-                  Lekki,phase 2
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "6.36px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  Duplex
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 700,
-                    fontSize: "19.7px",
-                    color: "#EE1B24",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  $2,000
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-
-          <Box>
-            <Box
-              component="img"
-              src={rectangle700}
-              alt=""
-              sx={{ width: "281px", height: "361px" }}
-            />
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              padding: "7.94427px 15.8885px 14.2997px 38.9269px",
-              gap: "17.48px",
-              width: "415px !important",
-              height: "361px",
-              borderRadius: " 0px 39.7214px",
-              backgroundColor: "white",
-            }}
-          >
-            <Box
-              component="img"
-              src={rectangle42}
-              alt=""
-              sx={{ width: "349.55px", height: "202.58px" }}
-            />
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "flex-end",
-                flexDirection: "row",
-                padding: "0px",
-                gap: "114.4px",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "2.38px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    fontSize: "31.78px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "48px",
-                  }}
-                >
-                  The Palace
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                    opacity: "0.8",
-                  }}
-                >
-                  Lekki,phase 2
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "6.36px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  Duplex
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 700,
-                    fontSize: "19.7px",
-                    color: "#EE1B24",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  $2,000
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              padding: "7.94427px 15.8885px 14.2997px 38.9269px",
-              gap: "17.48px",
-              width: "415px !important",
-              height: "361px",
-              borderRadius: " 0px 39.7214px",
-              backgroundColor: "white",
-            }}
-          >
-            <Box
-              component="img"
-              src={rectangle4}
-              alt=""
-              sx={{ width: "349.55px", height: "202.58px" }}
-            />
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "flex-end",
-                flexDirection: "row",
-                padding: "0px",
-                gap: "114.4px",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "2.38px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    fontSize: "31.78px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "48px",
-                  }}
-                >
-                  The Palace
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                    opacity: "0.8",
-                  }}
-                >
-                  Lekki,phase 2
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "6.36px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  Duplex
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 700,
-                    fontSize: "19.7px",
-                    color: "#EE1B24",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  $2,000
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex !important",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              padding: "7.94427px 15.8885px 14.2997px 38.9269px",
-              gap: "17.48px",
-              width: "415px !important",
-              height: "361px",
-              borderRadius: " 0px 39.7214px",
-              backgroundColor: "white",
-            }}
-          >
-            <Box
-              component="img"
-              src={rectangle41}
-              alt=""
-              sx={{ width: "349.55px", height: "202.58px" }}
-            />
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "flex-end",
-                flexDirection: "row",
-                gap: "114.4px",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  gap: "2.38px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    fontSize: "31.8px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "48px",
-                  }}
-                >
-                  The Palace
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                    opacity: "0.8",
-                  }}
-                >
-                  Lekki,phase 2
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  padding: "0px",
-                  gap: "6.36px",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: "19.7px",
-                    color: "#232323",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  Duplex
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 700,
-                    fontSize: "19.7px",
-                    color: "#EE1B24",
-                    fontFamily: "Poppins",
-                    fontStyle: "normal",
-                    lineHeight: "29px",
-                  }}
-                >
-                  $2,000
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-        </Slider>
-        {/* <Box
+        <Box
           sx={{
             display: "flex",
             flexDirection: "row",
@@ -913,7 +399,7 @@ function HomePage3() {
                     lineHeight: "48px",
                   }}
                 >
-                  The Palace
+                  REXONA
                 </Typography>
                 <Typography
                   sx={{
@@ -1168,9 +654,9 @@ function HomePage3() {
               </Box>
             </Box>
           </Box>
-        </Box> */}
+        </Box>
 
-        {/* <Button
+        <Button
           sx={{
             padding: "11px 48px",
             borderRadius: "5px",
@@ -1190,7 +676,7 @@ function HomePage3() {
           }}
         >
           View More
-        </Button> */}
+        </Button>
       </Box>
     </>
   );
