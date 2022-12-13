@@ -24,7 +24,6 @@ function MainFooter() {
     <Box
       component="div"
       sx={{
-        margin: { xs: "0px auto", lg: "0px" },
         width: { xs: "375px", lg: "1366px" },
       }}
     >
