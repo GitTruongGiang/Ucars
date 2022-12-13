@@ -32,14 +32,12 @@ function HomePage1() {
             justifyContent: { xs: "space-between", lg: "flex-start" },
             flexDirection: "row",
             alignItems: "flex-start",
-            gap: "24px",
+            gap: { xs: "39px", lg: "24px" },
             overflowX: "auto",
             overflowY: "hidden",
           }}
         >
-          <Box>
-            <img src={rectangle700} alt="" height="361px" width="281px" />
-          </Box>
+          <img src={rectangle700} alt="" height="361px" width="281px" />
 
           <Box
             sx={{
