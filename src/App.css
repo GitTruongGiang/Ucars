@@ -3,6 +3,7 @@
 }
 body {
   margin: 0 auto;
+  width: 1366px;
 }
 .carsBackgroud {
   background-image: url("./layout/mainHeader/imageHeader/cars-backgroud-1.png");
@@ -75,6 +76,10 @@ body {
   width: 253.28px;
 }
 @media only screen and (min-width: 0px) and (max-width: 600px) {
+  body {
+    margin: 0 auto;
+    width: 375px;
+  }
   .unsplash {
     background-image: url("./page/homePage/Rectangle/unsplash_SV3e7hGlVnc-1.png");
     height: 694px;
