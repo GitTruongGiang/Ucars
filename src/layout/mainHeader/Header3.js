@@ -13,7 +13,7 @@ function Header3() {
         width: { xs: "343px", lg: "1366px" },
         height: { xs: "142px", lg: "529px" },
         borderRadius: { xs: "5px", lg: "0" },
-        margin: { xs: "0 auto", lg: "0" },
+        margin: "0 auto",
       }}
     >
       <Box

@@ -11,6 +11,7 @@ function HomePage2() {
         backgroundColor: "#232323",
         height: { xs: "1253px", lg: "810px" },
         width: { xs: "375px", lg: "1366px" },
+        margin: "0 auto",
       }}
     >
       <Box

@@ -34,13 +34,13 @@ function Header4() {
         borderRadius: { xs: "6px", lg: "10px" },
         border: "1px solid #E3E3E3",
         boxShadow: "20px 20px 120px 15px rgba(0, 0, 0, 0.05)",
-        margin: { xs: "0 auto", lg: "0" },
         padding: { xs: "8px", lg: "25px 40px" },
         mt: { xs: "24px", lg: "0" },
         display: "flex",
         flexDirection: { xs: "column", lg: "row" },
         gap: { xs: "0", lg: "40px" },
         alignItems: { xs: "flex-start", lg: "center" },
+        margin: "0 auto",
       }}
     >
       <Box

@@ -13,6 +13,7 @@ function HomePage4() {
         justifyContent: "space-between",
         alignItems: "flex-start",
         padding: "80px",
+        margin: "0 auto",
       }}
     >
       <Box
