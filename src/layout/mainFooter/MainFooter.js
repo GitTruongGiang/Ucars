@@ -38,30 +38,6 @@ function MainFooter() {
         <MainFooter1 />
 
         <MainFooter2 />
-
-        <Box
-          sx={{
-            display: { xs: "flex", lg: "none" },
-            backgroundColor: "#232323",
-            height: "48px",
-            width: "375px",
-          }}
-        >
-          <Typography
-            sx={{
-              fontSize: "12px",
-              fontWeight: 400,
-              color: "#ffff",
-              padding: "14px 0",
-              margin: "0 auto",
-              lineHeight: "20px",
-              fontFamily: "Poppins",
-              fontStyle: "normal",
-            }}
-          >
-            © 2022. All rights reserved.
-          </Typography>
-        </Box>
       </Box>
     </Box>
   );

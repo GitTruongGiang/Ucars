@@ -7,7 +7,7 @@ function MainFooter2() {
   return (
     <Box
       sx={{
-        padding: { xs: "0px 16px 0px 16px", lg: "0px 113.38px 42px 113.38px" },
+        padding: { xs: "0px", lg: "0px 113.38px 42px 113.38px" },
       }}
     >
       <Box
@@ -15,7 +15,9 @@ function MainFooter2() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "flex-start",
+          flexDirection: { xs: "column", lg: "row" },
           width: { xs: "343px", lg: "1138.38px" },
+          gap: { xs: "22px", lg: "0px" },
         }}
       >
         <Box
@@ -24,7 +26,7 @@ function MainFooter2() {
             flexDirection: "column",
             alignItems: "flex-start",
             gap: "20px",
-            padding: "0px",
+            padding: { xs: "0px 16px 0px 16px", lg: "0px" },
           }}
         >
           <Box
@@ -109,19 +111,28 @@ function MainFooter2() {
           </Box>
         </Box>
 
-        <Typography
+        <Box
           sx={{
-            fontSize: "14px",
-            fontWeight: 400,
-            color: "#8C8C8C",
-            display: { xs: "none", lg: "flex" },
-            lineHeight: "22px",
-            fontFamily: "Poppins",
-            fontStyle: "normal",
+            backgroundColor: { xs: "#232323", lg: "#fff" },
+            height: { xs: "48px", lg: "22px" },
+            width: { xs: "375px", lg: "186px" },
+            padding: { xs: "14px 0px", lg: "0px" },
           }}
         >
-          © 2022. All rights reserved.
-        </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "12px", lg: "14px" },
+              fontWeight: 400,
+              color: { xs: "#fff", lg: "#8C8C8C" },
+              lineHeight: "22px",
+              fontFamily: "Poppins",
+              fontStyle: "normal",
+              textAlign: { xs: "center", lg: "right" },
+            }}
+          >
+            © 2022. All rights reserved.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
